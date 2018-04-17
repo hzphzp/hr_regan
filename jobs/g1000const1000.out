@@ -1,0 +1,580 @@
+Time is date
+Directory is /gdata/huangzp/dsl_sgen/jobs
+This job runs on following nodes:
+G116
+G116-gpu1
+G116-gpu0
+[*] MODEL dir: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-48-26
+[*] PARAM path: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-48-26/params.json
+Time is date
+Directory is /gdata/huangzp/dsl_sgen/jobs
+This job runs on following nodes:
+G120
+G120-gpu1
+G120-gpu0
+[*] MODEL dir: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04
+[*] PARAM path: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/params.json
+[0/500000] Loss_D: 2.7807 Loss_G: 119.2851
+[0/500000] l_d_A_real: 0.7655 l_d_A_fake: 0.6262, l_d_B_real: 0.6685, l_d_B_fake: 0.7205
+[0/500000] l_const_A: 0.0121 l_const_B: 0.0161, l_gan_A: 0.7432, l_gan_B: 0.6727
+[0/500000] l_dsl_A: 0.0223 l_dsl_B: 0.0223
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/0_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/0_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/0_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/0_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[4/500000] Loss_D: 2.7749 Loss_G: 93.6960
+[4/500000] l_d_A_real: 0.7244 l_d_A_fake: 0.6639, l_d_B_real: 0.6869, l_d_B_fake: 0.6997
+[4/500000] l_const_A: 0.0068 l_const_B: 0.0090, l_gan_A: 0.7369, l_gan_B: 0.6994
+[4/500000] l_dsl_A: 0.0081 l_dsl_B: 0.0081
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/4_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/4_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/4_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/4_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[8/500000] Loss_D: 2.7482 Loss_G: 100.7398
+[8/500000] l_d_A_real: 0.7089 l_d_A_fake: 0.6534, l_d_B_real: 0.7066, l_d_B_fake: 0.6791
+[8/500000] l_const_A: 0.0063 l_const_B: 0.0122, l_gan_A: 0.7201, l_gan_B: 0.7049
+[8/500000] l_dsl_A: 0.0020 l_dsl_B: 0.0020
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/8_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/8_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/8_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/8_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[12/500000] Loss_D: 2.7289 Loss_G: 88.6619
+[12/500000] l_d_A_real: 0.6922 l_d_A_fake: 0.6554, l_d_B_real: 0.6950, l_d_B_fake: 0.6863
+[12/500000] l_const_A: 0.0066 l_const_B: 0.0064, l_gan_A: 0.7279, l_gan_B: 0.7063
+[12/500000] l_dsl_A: 0.0052 l_dsl_B: 0.0052
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/12_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/12_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/12_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/12_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[16/500000] Loss_D: 2.7291 Loss_G: 97.2910
+[16/500000] l_d_A_real: 0.6734 l_d_A_fake: 0.6772, l_d_B_real: 0.6901, l_d_B_fake: 0.6885
+[16/500000] l_const_A: 0.0063 l_const_B: 0.0080, l_gan_A: 0.7236, l_gan_B: 0.7030
+[16/500000] l_dsl_A: 0.0030 l_dsl_B: 0.0030
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/16_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/16_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/16_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/16_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[20/500000] Loss_D: 2.6880 Loss_G: 92.1562
+[20/500000] l_d_A_real: 0.6902 l_d_A_fake: 0.6262, l_d_B_real: 0.7002, l_d_B_fake: 0.6715
+[20/500000] l_const_A: 0.0063 l_const_B: 0.0060, l_gan_A: 0.7387, l_gan_B: 0.6948
+[20/500000] l_dsl_A: 0.0112 l_dsl_B: 0.0112
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/20_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/20_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/20_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/20_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[24/500000] Loss_D: 2.7554 Loss_G: 88.4145
+[24/500000] l_d_A_real: 0.6522 l_d_A_fake: 0.6938, l_d_B_real: 0.6921, l_d_B_fake: 0.7174
+[24/500000] l_const_A: 0.0051 l_const_B: 0.0055, l_gan_A: 0.7474, l_gan_B: 0.7013
+[24/500000] l_dsl_A: 0.0265 l_dsl_B: 0.0265
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/24_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/24_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/24_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/24_x_BAB.png
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[28/500000] Loss_D: 2.7627 Loss_G: 85.7370
+[28/500000] l_d_A_real: 0.6710 l_d_A_fake: 0.7004, l_d_B_real: 0.6932, l_d_B_fake: 0.6980
+[28/500000] l_const_A: 0.0057 l_const_B: 0.0044, l_gan_A: 0.7599, l_gan_B: 0.7119
+[28/500000] l_dsl_A: 0.0120 l_dsl_B: 0.0120
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/28_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/28_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/28_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/28_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[32/500000] Loss_D: 2.6603 Loss_G: 86.9887
+[32/500000] l_d_A_real: 0.6716 l_d_A_fake: 0.6191, l_d_B_real: 0.7025, l_d_B_fake: 0.6671
+[32/500000] l_const_A: 0.0050 l_const_B: 0.0049, l_gan_A: 0.7713, l_gan_B: 0.7136
+[32/500000] l_dsl_A: 0.0082 l_dsl_B: 0.0082
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/32_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/32_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/32_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/32_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[36/500000] Loss_D: 2.6915 Loss_G: 94.1546
+[36/500000] l_d_A_real: 0.6857 l_d_A_fake: 0.6418, l_d_B_real: 0.6786, l_d_B_fake: 0.6854
+[36/500000] l_const_A: 0.0052 l_const_B: 0.0066, l_gan_A: 0.7564, l_gan_B: 0.7083
+[36/500000] l_dsl_A: 0.0040 l_dsl_B: 0.0040
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/36_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/36_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/36_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/36_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[40/500000] Loss_D: 2.7208 Loss_G: 88.7411
+[40/500000] l_d_A_real: 0.6183 l_d_A_fake: 0.7282, l_d_B_real: 0.6667, l_d_B_fake: 0.7076
+[40/500000] l_const_A: 0.0062 l_const_B: 0.0049, l_gan_A: 0.7453, l_gan_B: 0.7016
+[40/500000] l_dsl_A: 0.0178 l_dsl_B: 0.0178
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/40_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/40_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/40_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/40_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[44/500000] Loss_D: 2.6310 Loss_G: 102.3242
+[44/500000] l_d_A_real: 0.6129 l_d_A_fake: 0.6565, l_d_B_real: 0.6733, l_d_B_fake: 0.6882
+[44/500000] l_const_A: 0.0052 l_const_B: 0.0094, l_gan_A: 0.7528, l_gan_B: 0.6977
+[44/500000] l_dsl_A: 0.0059 l_dsl_B: 0.0059
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/44_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/44_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/44_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/44_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[48/500000] Loss_D: 2.6338 Loss_G: 82.8424
+[48/500000] l_d_A_real: 0.6182 l_d_A_fake: 0.6612, l_d_B_real: 0.6642, l_d_B_fake: 0.6903
+[48/500000] l_const_A: 0.0039 l_const_B: 0.0034, l_gan_A: 0.8173, l_gan_B: 0.7453
+[48/500000] l_dsl_A: 0.0472 l_dsl_B: 0.0472
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/48_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/48_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/48_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/48_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[52/500000] Loss_D: 2.5529 Loss_G: 97.3806
+[52/500000] l_d_A_real: 0.5738 l_d_A_fake: 0.6184, l_d_B_real: 0.6835, l_d_B_fake: 0.6772
+[52/500000] l_const_A: 0.0047 l_const_B: 0.0075, l_gan_A: 0.7634, l_gan_B: 0.7018
+[52/500000] l_dsl_A: 0.0116 l_dsl_B: 0.0116
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/52_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/52_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/52_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/52_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[56/500000] Loss_D: 2.5908 Loss_G: 85.7422
+[56/500000] l_d_A_real: 0.6308 l_d_A_fake: 0.6126, l_d_B_real: 0.6919, l_d_B_fake: 0.6555
+[56/500000] l_const_A: 0.0039 l_const_B: 0.0047, l_gan_A: 0.8184, l_gan_B: 0.7476
+[56/500000] l_dsl_A: 0.0104 l_dsl_B: 0.0104
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/56_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/56_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/56_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/56_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[60/500000] Loss_D: 2.5119 Loss_G: 100.7162
+[60/500000] l_d_A_real: 0.5766 l_d_A_fake: 0.6094, l_d_B_real: 0.6792, l_d_B_fake: 0.6467
+[60/500000] l_const_A: 0.0064 l_const_B: 0.0079, l_gan_A: 0.7922, l_gan_B: 0.7131
+[60/500000] l_dsl_A: 0.0130 l_dsl_B: 0.0130
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/60_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/60_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/60_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/60_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[64/500000] Loss_D: 2.5829 Loss_G: 92.1236
+[64/500000] l_d_A_real: 0.6707 l_d_A_fake: 0.6064, l_d_B_real: 0.6845, l_d_B_fake: 0.6214
+[64/500000] l_const_A: 0.0049 l_const_B: 0.0056, l_gan_A: 0.8013, l_gan_B: 0.7144
+[64/500000] l_dsl_A: 0.1167 l_dsl_B: 0.1167
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/64_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/64_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/64_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/64_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[68/500000] Loss_D: 2.5410 Loss_G: 93.1694
+[68/500000] l_d_A_real: 0.6339 l_d_A_fake: 0.6170, l_d_B_real: 0.6480, l_d_B_fake: 0.6420
+[68/500000] l_const_A: 0.0056 l_const_B: 0.0063, l_gan_A: 0.8325, l_gan_B: 0.7713
+[68/500000] l_dsl_A: 0.0157 l_dsl_B: 0.0157
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/68_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/68_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/68_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/68_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[72/500000] Loss_D: 2.5209 Loss_G: 93.1374
+[72/500000] l_d_A_real: 0.6034 l_d_A_fake: 0.5990, l_d_B_real: 0.6597, l_d_B_fake: 0.6588
+[72/500000] l_const_A: 0.0040 l_const_B: 0.0067, l_gan_A: 0.8406, l_gan_B: 0.7420
+[72/500000] l_dsl_A: 0.0071 l_dsl_B: 0.0071
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/72_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/72_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/72_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/72_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[76/500000] Loss_D: 2.5903 Loss_G: 80.5008
+[76/500000] l_d_A_real: 0.5452 l_d_A_fake: 0.6466, l_d_B_real: 0.5778, l_d_B_fake: 0.8207
+[76/500000] l_const_A: 0.0057 l_const_B: 0.0026, l_gan_A: 0.9102, l_gan_B: 0.7087
+[76/500000] l_dsl_A: 0.0654 l_dsl_B: 0.0654
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/76_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/76_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/76_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/76_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[80/500000] Loss_D: 2.3777 Loss_G: 83.0537
+[80/500000] l_d_A_real: 0.5320 l_d_A_fake: 0.5477, l_d_B_real: 0.6241, l_d_B_fake: 0.6739
+[80/500000] l_const_A: 0.0040 l_const_B: 0.0034, l_gan_A: 0.8474, l_gan_B: 0.7840
+[80/500000] l_dsl_A: 0.0327 l_dsl_B: 0.0327
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/80_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/80_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/80_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/80_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[84/500000] Loss_D: 2.4288 Loss_G: 87.7494
+[84/500000] l_d_A_real: 0.5544 l_d_A_fake: 0.6230, l_d_B_real: 0.6140, l_d_B_fake: 0.6374
+[84/500000] l_const_A: 0.0056 l_const_B: 0.0045, l_gan_A: 0.9308, l_gan_B: 0.7635
+[84/500000] l_dsl_A: 0.0200 l_dsl_B: 0.0200
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/84_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/84_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/84_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/84_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[88/500000] Loss_D: 2.3701 Loss_G: 97.7666
+[88/500000] l_d_A_real: 0.5345 l_d_A_fake: 0.5924, l_d_B_real: 0.5916, l_d_B_fake: 0.6516
+[88/500000] l_const_A: 0.0052 l_const_B: 0.0077, l_gan_A: 0.8669, l_gan_B: 0.7212
+[88/500000] l_dsl_A: 0.0104 l_dsl_B: 0.0104
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/88_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/88_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/88_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/88_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[92/500000] Loss_D: 2.2526 Loss_G: 88.0396
+[92/500000] l_d_A_real: 0.5053 l_d_A_fake: 0.5540, l_d_B_real: 0.5718, l_d_B_fake: 0.6215
+[92/500000] l_const_A: 0.0043 l_const_B: 0.0050, l_gan_A: 0.9251, l_gan_B: 0.8556
+[92/500000] l_dsl_A: 0.0453 l_dsl_B: 0.0453
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/92_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/92_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/92_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/92_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[96/500000] Loss_D: 2.2173 Loss_G: 90.5850
+[96/500000] l_d_A_real: 0.4809 l_d_A_fake: 0.5305, l_d_B_real: 0.6057, l_d_B_fake: 0.6002
+[96/500000] l_const_A: 0.0048 l_const_B: 0.0053, l_gan_A: 0.8542, l_gan_B: 0.7995
+[96/500000] l_dsl_A: 0.0341 l_dsl_B: 0.0341
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/96_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/96_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/96_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/96_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[100/500000] Loss_D: 2.2656 Loss_G: 90.5071
+[100/500000] l_d_A_real: 0.6197 l_d_A_fake: 0.4924, l_d_B_real: 0.5933, l_d_B_fake: 0.5602
+[100/500000] l_const_A: 0.0053 l_const_B: 0.0048, l_gan_A: 0.9309, l_gan_B: 0.7513
+[100/500000] l_dsl_A: 0.0291 l_dsl_B: 0.0291
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/100_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/100_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/100_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/100_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[104/500000] Loss_D: 2.1613 Loss_G: 86.2932
+[104/500000] l_d_A_real: 0.4704 l_d_A_fake: 0.5228, l_d_B_real: 0.5670, l_d_B_fake: 0.6011
+[104/500000] l_const_A: 0.0045 l_const_B: 0.0041, l_gan_A: 0.9302, l_gan_B: 0.9228
+[104/500000] l_dsl_A: 0.0424 l_dsl_B: 0.0424
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/104_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/104_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/104_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/104_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[108/500000] Loss_D: 2.2066 Loss_G: 98.7447
+[108/500000] l_d_A_real: 0.4334 l_d_A_fake: 0.6657, l_d_B_real: 0.5596, l_d_B_fake: 0.5479
+[108/500000] l_const_A: 0.0046 l_const_B: 0.0070, l_gan_A: 0.8674, l_gan_B: 0.8026
+[108/500000] l_dsl_A: 0.0337 l_dsl_B: 0.0337
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/108_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/108_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/108_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/108_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[112/500000] Loss_D: 2.0654 Loss_G: 97.6045
+[112/500000] l_d_A_real: 0.4571 l_d_A_fake: 0.5395, l_d_B_real: 0.5689, l_d_B_fake: 0.4998
+[112/500000] l_const_A: 0.0047 l_const_B: 0.0068, l_gan_A: 0.8646, l_gan_B: 0.7496
+[112/500000] l_dsl_A: 0.0262 l_dsl_B: 0.0262
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/112_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/112_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/112_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/112_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[116/500000] Loss_D: 2.3238 Loss_G: 84.6245
+[116/500000] l_d_A_real: 0.4310 l_d_A_fake: 0.5236, l_d_B_real: 0.5447, l_d_B_fake: 0.8246
+[116/500000] l_const_A: 0.0054 l_const_B: 0.0037, l_gan_A: 1.0831, l_gan_B: 0.6373
+[116/500000] l_dsl_A: 0.0089 l_dsl_B: 0.0089
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/116_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/116_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/116_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/116_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[120/500000] Loss_D: 2.1316 Loss_G: 86.1229
+[120/500000] l_d_A_real: 0.4443 l_d_A_fake: 0.4309, l_d_B_real: 0.6182, l_d_B_fake: 0.6381
+[120/500000] l_const_A: 0.0046 l_const_B: 0.0035, l_gan_A: 1.0909, l_gan_B: 0.9529
+[120/500000] l_dsl_A: 0.2036 l_dsl_B: 0.2036
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/120_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/120_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/120_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/120_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[124/500000] Loss_D: 2.2867 Loss_G: 88.9859
+[124/500000] l_d_A_real: 0.5908 l_d_A_fake: 0.5241, l_d_B_real: 0.5744, l_d_B_fake: 0.5974
+[124/500000] l_const_A: 0.0045 l_const_B: 0.0047, l_gan_A: 0.8928, l_gan_B: 0.8417
+[124/500000] l_dsl_A: 0.0156 l_dsl_B: 0.0156
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/124_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/124_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/124_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/124_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[128/500000] Loss_D: 2.2093 Loss_G: 86.4066
+[128/500000] l_d_A_real: 0.3737 l_d_A_fake: 0.6928, l_d_B_real: 0.5196, l_d_B_fake: 0.6233
+[128/500000] l_const_A: 0.0046 l_const_B: 0.0041, l_gan_A: 1.0937, l_gan_B: 0.8773
+[128/500000] l_dsl_A: 0.0215 l_dsl_B: 0.0215
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/128_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/128_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/128_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/128_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[132/500000] Loss_D: 1.8294 Loss_G: 90.0314
+[132/500000] l_d_A_real: 0.3949 l_d_A_fake: 0.3669, l_d_B_real: 0.6273, l_d_B_fake: 0.4403
+[132/500000] l_const_A: 0.0045 l_const_B: 0.0046, l_gan_A: 0.8203, l_gan_B: 0.7008
+[132/500000] l_dsl_A: 0.0228 l_dsl_B: 0.0228
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/132_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/132_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/132_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/132_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[136/500000] Loss_D: 1.9394 Loss_G: 86.8610
+[136/500000] l_d_A_real: 0.4234 l_d_A_fake: 0.4745, l_d_B_real: 0.4790, l_d_B_fake: 0.5625
+[136/500000] l_const_A: 0.0034 l_const_B: 0.0043, l_gan_A: 1.1727, l_gan_B: 1.0103
+[136/500000] l_dsl_A: 0.0226 l_dsl_B: 0.0226
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/136_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/136_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/136_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/136_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[140/500000] Loss_D: 2.1618 Loss_G: 87.1726
+[140/500000] l_d_A_real: 0.6240 l_d_A_fake: 0.4894, l_d_B_real: 0.4686, l_d_B_fake: 0.5799
+[140/500000] l_const_A: 0.0041 l_const_B: 0.0040, l_gan_A: 1.0973, l_gan_B: 1.0156
+[140/500000] l_dsl_A: 0.0733 l_dsl_B: 0.0733
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/140_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/140_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/140_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/140_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[144/500000] Loss_D: 1.8744 Loss_G: 88.2888
+[144/500000] l_d_A_real: 0.4378 l_d_A_fake: 0.4280, l_d_B_real: 0.5153, l_d_B_fake: 0.4932
+[144/500000] l_const_A: 0.0054 l_const_B: 0.0039, l_gan_A: 1.2152, l_gan_B: 1.0963
+[144/500000] l_dsl_A: 0.0306 l_dsl_B: 0.0306
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/144_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/144_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/144_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/144_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[148/500000] Loss_D: 1.7638 Loss_G: 87.3456
+[148/500000] l_d_A_real: 0.3847 l_d_A_fake: 0.3276, l_d_B_real: 0.5733, l_d_B_fake: 0.4782
+[148/500000] l_const_A: 0.0049 l_const_B: 0.0039, l_gan_A: 1.2250, l_gan_B: 0.8616
+[148/500000] l_dsl_A: 0.0455 l_dsl_B: 0.0455
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/148_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/148_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/148_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/148_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[152/500000] Loss_D: 1.7061 Loss_G: 80.2804
+[152/500000] l_d_A_real: 0.3140 l_d_A_fake: 0.3692, l_d_B_real: 0.4501, l_d_B_fake: 0.5727
+[152/500000] l_const_A: 0.0040 l_const_B: 0.0022, l_gan_A: 1.2573, l_gan_B: 1.1629
+[152/500000] l_dsl_A: 0.1644 l_dsl_B: 0.1644
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/152_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/152_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/152_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/152_x_BAB.png
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[156/500000] Loss_D: 2.2800 Loss_G: 87.0356
+[156/500000] l_d_A_real: 0.2839 l_d_A_fake: 0.9565, l_d_B_real: 0.4126, l_d_B_fake: 0.6269
+[156/500000] l_const_A: 0.0048 l_const_B: 0.0036, l_gan_A: 1.3938, l_gan_B: 1.2110
+[156/500000] l_dsl_A: 0.1662 l_dsl_B: 0.1662
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/156_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/156_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/156_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/156_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[160/500000] Loss_D: 2.1726 Loss_G: 89.7092
+[160/500000] l_d_A_real: 0.3929 l_d_A_fake: 0.7426, l_d_B_real: 0.4505, l_d_B_fake: 0.5867
+[160/500000] l_const_A: 0.0042 l_const_B: 0.0045, l_gan_A: 1.0420, l_gan_B: 0.7873
+[160/500000] l_dsl_A: 0.0263 l_dsl_B: 0.0263
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/160_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/160_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/160_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/160_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[164/500000] Loss_D: 2.0454 Loss_G: 85.9213
+[164/500000] l_d_A_real: 0.3575 l_d_A_fake: 0.7409, l_d_B_real: 0.4050, l_d_B_fake: 0.5421
+[164/500000] l_const_A: 0.0040 l_const_B: 0.0038, l_gan_A: 1.1764, l_gan_B: 1.1659
+[164/500000] l_dsl_A: 0.0511 l_dsl_B: 0.0511
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/164_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/164_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/164_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/164_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[168/500000] Loss_D: 1.6454 Loss_G: 89.2822
+[168/500000] l_d_A_real: 0.4033 l_d_A_fake: 0.3296, l_d_B_real: 0.4855, l_d_B_fake: 0.4270
+[168/500000] l_const_A: 0.0055 l_const_B: 0.0043, l_gan_A: 1.3162, l_gan_B: 1.0063
+[168/500000] l_dsl_A: 0.0480 l_dsl_B: 0.0480
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/168_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/168_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/168_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/168_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[172/500000] Loss_D: 1.6548 Loss_G: 86.8236
+[172/500000] l_d_A_real: 0.3052 l_d_A_fake: 0.4354, l_d_B_real: 0.3946, l_d_B_fake: 0.5196
+[172/500000] l_const_A: 0.0043 l_const_B: 0.0031, l_gan_A: 1.3633, l_gan_B: 1.2982
+[172/500000] l_dsl_A: 0.0363 l_dsl_B: 0.0363
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/172_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/172_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/172_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/172_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[176/500000] Loss_D: 1.5403 Loss_G: 84.0949
+[176/500000] l_d_A_real: 0.2927 l_d_A_fake: 0.3014, l_d_B_real: 0.5827, l_d_B_fake: 0.3635
+[176/500000] l_const_A: 0.0037 l_const_B: 0.0029, l_gan_A: 1.2088, l_gan_B: 0.7548
+[176/500000] l_dsl_A: 0.0496 l_dsl_B: 0.0496
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/176_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/176_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/176_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/176_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[180/500000] Loss_D: 1.8470 Loss_G: 85.9721
+[180/500000] l_d_A_real: 0.3375 l_d_A_fake: 0.2915, l_d_B_real: 0.8794, l_d_B_fake: 0.3386
+[180/500000] l_const_A: 0.0040 l_const_B: 0.0034, l_gan_A: 1.0910, l_gan_B: 1.0828
+[180/500000] l_dsl_A: 0.1124 l_dsl_B: 0.1124
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/180_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/180_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/180_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/180_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[184/500000] Loss_D: 1.4977 Loss_G: 84.9810
+[184/500000] l_d_A_real: 0.2672 l_d_A_fake: 0.3328, l_d_B_real: 0.5079, l_d_B_fake: 0.3898
+[184/500000] l_const_A: 0.0048 l_const_B: 0.0027, l_gan_A: 1.4689, l_gan_B: 1.1771
+[184/500000] l_dsl_A: 0.0746 l_dsl_B: 0.0746
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/184_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/184_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/184_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/184_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[188/500000] Loss_D: 1.5982 Loss_G: 82.2599
+[188/500000] l_d_A_real: 0.3910 l_d_A_fake: 0.3090, l_d_B_real: 0.4420, l_d_B_fake: 0.4561
+[188/500000] l_const_A: 0.0035 l_const_B: 0.0026, l_gan_A: 1.3323, l_gan_B: 0.9866
+[188/500000] l_dsl_A: 0.0568 l_dsl_B: 0.0568
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/188_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/188_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/188_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/188_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[192/500000] Loss_D: 1.5145 Loss_G: 92.9110
+[192/500000] l_d_A_real: 0.3350 l_d_A_fake: 0.3283, l_d_B_real: 0.3492, l_d_B_fake: 0.5019
+[192/500000] l_const_A: 0.0051 l_const_B: 0.0046, l_gan_A: 1.0156, l_gan_B: 1.0372
+[192/500000] l_dsl_A: 0.0517 l_dsl_B: 0.0517
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/192_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/192_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/192_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/192_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[196/500000] Loss_D: 1.4138 Loss_G: 84.4726
+[196/500000] l_d_A_real: 0.2351 l_d_A_fake: 0.3412, l_d_B_real: 0.3205, l_d_B_fake: 0.5170
+[196/500000] l_const_A: 0.0045 l_const_B: 0.0030, l_gan_A: 0.8376, l_gan_B: 1.0488
+[196/500000] l_dsl_A: 0.0537 l_dsl_B: 0.0537
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/196_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/196_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/196_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/196_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[200/500000] Loss_D: 1.6785 Loss_G: 93.0218
+[200/500000] l_d_A_real: 0.4616 l_d_A_fake: 0.3364, l_d_B_real: 0.3830, l_d_B_fake: 0.4974
+[200/500000] l_const_A: 0.0054 l_const_B: 0.0050, l_gan_A: 1.0694, l_gan_B: 1.0267
+[200/500000] l_dsl_A: 0.0299 l_dsl_B: 0.0299
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/200_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/200_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/200_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/200_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[204/500000] Loss_D: 1.4342 Loss_G: 92.8159
+[204/500000] l_d_A_real: 0.2923 l_d_A_fake: 0.2432, l_d_B_real: 0.6456, l_d_B_fake: 0.2531
+[204/500000] l_const_A: 0.0041 l_const_B: 0.0047, l_gan_A: 0.7690, l_gan_B: 0.5186
+[204/500000] l_dsl_A: 0.0103 l_dsl_B: 0.0103
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/204_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/204_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/204_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/204_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[208/500000] Loss_D: 1.5900 Loss_G: 87.7550
+[208/500000] l_d_A_real: 0.2336 l_d_A_fake: 0.4215, l_d_B_real: 0.3493, l_d_B_fake: 0.5855
+[208/500000] l_const_A: 0.0039 l_const_B: 0.0037, l_gan_A: 1.5337, l_gan_B: 1.2466
+[208/500000] l_dsl_A: 0.1418 l_dsl_B: 0.1418
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/208_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/208_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/208_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/208_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[212/500000] Loss_D: 1.2770 Loss_G: 83.0294
+[212/500000] l_d_A_real: 0.2067 l_d_A_fake: 0.2099, l_d_B_real: 0.5283, l_d_B_fake: 0.3320
+[212/500000] l_const_A: 0.0049 l_const_B: 0.0024, l_gan_A: 1.5725, l_gan_B: 0.8406
+[212/500000] l_dsl_A: 0.0361 l_dsl_B: 0.0361
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/212_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/212_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/212_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/212_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04...
+[216/500000] Loss_D: 1.6886 Loss_G: 84.2273
+[216/500000] l_d_A_real: 0.2129 l_d_A_fake: 0.6473, l_d_B_real: 0.3247, l_d_B_fake: 0.5037
+[216/500000] l_const_A: 0.0037 l_const_B: 0.0027, l_gan_A: 1.6117, l_gan_B: 1.3219
+[216/500000] l_dsl_A: 0.0811 l_dsl_B: 0.0811
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/216_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/216_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/216_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-05_11-38-04/216_x_BAB.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...

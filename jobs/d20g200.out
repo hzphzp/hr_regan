@@ -1,0 +1,30 @@
+Time is date
+Directory is /gdata/huangzp/dsl_sgen/jobs
+This job runs on following nodes:
+G115
+G115-gpu1
+G115-gpu0
+Time is date
+Directory is /gdata/huangzp/dsl_sgen/jobs
+This job runs on following nodes:
+G115
+G115-gpu1
+G115-gpu0
+[*] MODEL dir: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_10-13-04
+[*] PARAM path: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_10-13-04/params.json
+Time is date
+Directory is /gdata/huangzp/dsl_sgen/jobs
+This job runs on following nodes:
+G115
+G115-gpu1
+G115-gpu0
+[*] MODEL dir: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-28-08
+[*] PARAM path: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-28-08/params.json
+[0/500000] Loss_D: 1.9976 Loss_G: 206.8785
+[0/500000] l_d_A_real: 0.4692 l_d_A_fake: 0.5091, l_d_B_real: 0.4920, l_d_B_fake: 0.5273
+[0/500000] l_const_A: 0.0612 l_const_B: 0.0330, l_gan_A: 0.4521, l_gan_B: 0.4921
+[0/500000] l_dsl_A: 0.0071 l_dsl_B: 0.0071
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-28-08/0_x_AB.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-28-08/0_x_ABA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-28-08/0_x_BA.png
+[*] Samples saved: /gdata/huangzp/dsl_sgen/logs/img_align_celeba_2018-03-04_13-28-08/0_x_BAB.png

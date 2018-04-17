@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "main.py", line 1, in <module>
+    import torch
+ImportError: No module named torch
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "exec: \"python2\": executable file not found in $PATH": unknown.
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import torch
+ImportError: No module named torch
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "exec: \"python2\": executable file not found in $PATH": unknown.
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import torch
+ImportError: No module named torch
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "exec: \"python2\": executable file not found in $PATH": unknown.
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import torch
+ImportError: No module named torch
+docker: Error response from daemon: Duplicate mount point: /gdata/huangzp/dsl_sgen.
+See 'docker run --help'.
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "exec: \"/gdata/huangzp/dsl_sgen/main.py\": permission denied": unknown.
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "exec: \"/gdata/huangzp/dsl_sgen/main.py/opt/conda/envs/pytorch-py3.6/bin/python\": stat /gdata/huangzp/dsl_sgen/main.py/opt/conda/envs/pytorch-py3.6/bin/python: not a directory": unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type.

@@ -1,0 +1,12 @@
+#PBS    -N g200const100psnr1
+#PBS    -o /gdata/huangzp/dsl_sgen/jobs/g200const100psnr1.out 
+#PBS    -e /gdata/huangzp/dsl_sgen/jobs/g200const100psnr1.err
+#PBS    -l nodes=1:gpus=1:S
+#PBS    -r y
+cd $PBS_O_WORKDIR
+echo Time is 'date'
+echo Directory is $PWD
+echo This job runs on following nodes:
+cat $PBS_NODEFILE
+cat $PBS_GPUFILE
+startdocker -P /gdata/huangzp/dsl_sgen -D /gdata/huangzp/dsl_sgen -u "--ipc=host" -c "python /gdata/huangzp/dsl_sgen/main.py --num_gpu=1 --save_step=20 --log_step=20"  bit:5000/deepo
