@@ -1,5 +1,0 @@
-/usr/local/sbin/startdocker: line 3: /tmp/startdocker.log: Permission denied
-/usr/local/sbin/startdocker: line 74: /tmp/startdocker.log: Permission denied
-Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/home/docker-root/overlay2/l/XJKVRPQD6ZEYYNVBVXZPWGTKRX:/home/docker-root/overlay2/l/EOHMOE5D4DQG6KEOP6D4WWZCXY:/home/docker-root/overlay2/l/OXKSGQO5DNCVA3QB3MCCJBYYRJ:/home/docker-root/overlay2/l/SQ5XXYHMYLAPFZ7HIRBTGZHCVH:/home/docker-root/overlay2/l/WH3B7D4LRNGVSPWZOT65N3RQE2:/home/docker-root/overlay2/l/BFTZ5HRE2XW22MCSX24CQL5RJ6:/home/docker-root/overlay2/l/PMW2ODDC2YNIQVMCFQQHGPG4OD:/home/docker-root/overlay2/l/AEINNPTYSUWX7E4NQKI5HQ7HBZ:/home/docker-root/overla'
-/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:1168: UserWarning: Using a target size (torch.Size([32])) that is different to the input size (torch.Size([32, 1])) is deprecated. Please ensure they have the same size.
-  "Please ensure they have the same size.".format(target.size(), input.size()))
