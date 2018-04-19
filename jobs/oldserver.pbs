@@ -1,0 +1,12 @@
+#PBS    -N regan2
+#PBS    -o regan2.out 
+#PBS    -e regan2.err
+#PBS    -l nodes=1:gpus=2:D
+#PBS    -r y
+cd $PBS_O_WORKDIR
+echo Time is 'date'
+echo Directory is $PWD
+echo This job runs on following nodes:
+cat $PBS_NODEFILE
+cat $PBS_GPUFILE
+python2 ../main.py --dataset=img_align_celeba --num_gpu=2 --log_step=8 --save_step=8
