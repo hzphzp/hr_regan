@@ -30,7 +30,7 @@ class Trainer(object):
         self.b_data_loader = b_data_loader
 
         self.num_gpu = config.num_gpu
-        self.dataset = config.dataset
+        self.dataset= config.dataset
 
         self.loss = config.loss
         self.lr = config.lr
@@ -71,8 +71,8 @@ class Trainer(object):
 
         if self.load_path:
             self.load_model()
-            
-    def psnr(self, original, compared):
+    @staticmethod
+    def psnr(original, compared):
         #Variable
         #if isinstance(original, str):
         #    original = np.array(Image.open(original).convert('RGB'))
@@ -142,7 +142,6 @@ class Trainer(object):
             self.E_AB.apply(weights_init)
 
     def load_model(self):
-        #TODO: to change the model
         print("[*] Load models from {}...".format(self.load_path))
 
         paths = glob(os.path.join(self.load_path, 'G_AB_*.pth'))
