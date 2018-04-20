@@ -13,7 +13,9 @@ from torch.autograd import Variable
 
 from models import *
 from data_loader import get_loader
-from img_random_discmp import img_random_dis 
+from img_random_discmp import img_random_dis
+
+
 def weights_init(m):
     classname = m.__class__.__name__
     if classname.find('Conv') != -1:
