@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d313bdf8-6601-49cd-94b0-efb2c1a6fda5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer.py" afterPath="$PROJECT_DIR$/trainer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer_advgan.py" afterPath="$PROJECT_DIR$/trainer_advgan.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +30,7 @@
       <file leaf-file-name="img_random_discmp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img_random_discmp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-675">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -38,8 +40,8 @@
       <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <caret line="252" column="45" lean-forward="true" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="45" />
+            <state relative-caret-position="51">
+              <caret line="502" column="23" lean-forward="false" selection-start-line="502" selection-start-column="23" selection-end-line="502" selection-end-column="23" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -50,8 +52,8 @@
       <file leaf-file-name="trainer_advgan.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainer_advgan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="222" column="44" lean-forward="true" selection-start-line="222" selection-start-column="44" selection-end-line="222" selection-end-column="44" />
+            <state relative-caret-position="400">
+              <caret line="417" column="46" lean-forward="true" selection-start-line="417" selection-start-column="46" selection-end-line="417" selection-end-column="46" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -62,7 +64,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="2775">
               <caret line="111" column="69" lean-forward="true" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -86,8 +88,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+            <state relative-caret-position="480">
+              <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -96,8 +98,8 @@
       <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="251">
+              <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -125,8 +127,16 @@
       <find>fake_te</find>
       <find>load_state_dict</find>
       <find>x_AB</find>
-      <find>self.out_dim</find>
       <find>a_width</find>
+      <find>l_d</find>
+      <find>batch_size</find>
+      <find>self.out_dim</find>
+      <find>generate_with_A</find>
+      <find>l_d.bac</find>
+      <find>is_</find>
+      <find>test</find>
+      <find>generate_with_A_test</find>
+      <find>generate_in</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,6 +146,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/trainer_advgan.py" />
         <option value="$PROJECT_DIR$/trainer.py" />
       </list>
     </option>
@@ -385,14 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img_random_discmp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -405,7 +408,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="2775">
           <caret line="111" column="69" lean-forward="true" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -413,10 +416,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img_random_discmp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="251">
+          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -431,28 +442,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainer_advgan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="222" column="44" lean-forward="true" selection-start-line="222" selection-start-column="44" selection-end-line="222" selection-end-column="44" />
+        <state relative-caret-position="400">
+          <caret line="417" column="46" lean-forward="true" selection-start-line="417" selection-start-column="46" selection-end-line="417" selection-end-column="46" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="252" column="45" lean-forward="true" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="45" />
+        <state relative-caret-position="51">
+          <caret line="502" column="23" lean-forward="false" selection-start-line="502" selection-start-column="23" selection-end-line="502" selection-end-column="23" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
