@@ -13,7 +13,9 @@ from torch.autograd import Variable
 
 from models import *
 from data_loader import get_loader
-from img_random_discmp import img_random_dis 
+from img_random_discmp import img_random_dis
+
+
 def weights_init(m):
     classname = m.__class__.__name__
     if classname.find('Conv') != -1:
@@ -186,11 +188,17 @@ class Trainer(object):
         else:
             raise Exception("[!] Caution! Paper didn't use {} opimizer other than Adam".format(config.optimizer))
 
-        optimizer_d = optimizer(
-            chain(self.D_A.parameters(), self.D_B.parameters()),
+        optimizer_1_g = optimizer(
+            chain(self.E_AB.parameters(), self.D_AB.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
-        optimizer_g = optimizer(
-            chain(self.G_AB.parameters(), self.G_BA.parameters()),
+        optimizer_1_d = optimizer(
+            chain(self.D_H.parameters()),
+            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
+        optimizer_2_g = optimizer(
+            chain(self.E_AB.parameters(), self.D_BA.parameters()),
+            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
+        optimizer_2_d = optimizer(
+            chain(self.D_L.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2))
 
         A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
@@ -256,7 +264,7 @@ class Trainer(object):
             l_d = l_d_B
 
             l_d.backward()
-            optimizer_d.step()
+            optimizer_1_d.step()
 
             # update D_AB network
             for gab_step in range(200):
@@ -307,7 +315,7 @@ class Trainer(object):
                 l_g = l_const_AB + l_gan_B
 
                 l_g.backward()
-                optimizer_g.step()
+                optimizer_1_g.step()
 
             '''update the second model: L to L'''
             # update D_L network
@@ -329,7 +337,7 @@ class Trainer(object):
             l_d = l_d_B
 
             l_d.backward()
-            optimizer_d.step()
+            optimizer_2_d.step()
 
             # update D_AB network
             for gab_step in range(200):
@@ -375,7 +383,7 @@ class Trainer(object):
                 l_g = l_const_AFA + l_gan_A
 
                 l_g.backward()
-                optimizer_g.step()
+                optimizer_2_g.step()
 
             if step % self.log_step == 0:
                 print("[{}/{}] Loss_D: {:.4f} Loss_G: {:.4f}". \

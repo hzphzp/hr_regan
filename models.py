@@ -109,7 +109,7 @@ class EncoderCNN_1(nn.Module):
             prev_dim = out_dim
             
         for i in range(6):
-            self.layers.append(ResidualBlock(dim_in=self.out_dim, dim_out=self.out_dim))
+            self.layers.append(ResidualBlock(dim_in=out_dim, dim_out=out_dim))
 
         self.layer_module = nn.ModuleList(self.layers)
 
