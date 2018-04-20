@@ -72,11 +72,11 @@ class Trainer(object):
 
     def build_model(self):
         if self.dataset == 'toy':
-            self.G_AB = GeneratorFC(2, 2, [config.fc_hidden_dim] * config.g_num_layer)
-            self.G_BA = GeneratorFC(2, 2, [config.fc_hidden_dim] * config.g_num_layer)
+            self.G_AB = GeneratorFC(2, 2, [self.config.fc_hidden_dim] * self.config.g_num_layer)
+            self.G_BA = GeneratorFC(2, 2, [self.config.fc_hidden_dim] * self.config.g_num_layer)
 
-            self.D_A = DiscriminatorFC(2, 1, [config.fc_hidden_dim] * config.d_num_layer)
-            self.D_B = DiscriminatorFC(2, 1, [config.fc_hidden_dim] * config.d_num_layer)
+            self.D_A = DiscriminatorFC(2, 1, [self.config.fc_hidden_dim] * self.config.d_num_layer)
+            self.D_B = DiscriminatorFC(2, 1, [self.config.fc_hidden_dim] * self.config.d_num_layer)
         else:
             a_height, a_width, a_channel = self.a_data_loader.shape
             b_height, b_width, b_channel = self.b_data_loader.shape
@@ -159,14 +159,14 @@ class Trainer(object):
 
         real_label = 1
         fake_label = 0
-
-        real_tensor = Variable(torch.FloatTensor(self.batch_size))
+        #todo: to find why there is a bug
+        real_tensor = Variable(torch.FloatTensor([self.batch_size]))
         _ = real_tensor.data.fill_(real_label)
 
-        fake_tensor = Variable(torch.FloatTensor(self.batch_size))
+        fake_tensor = Variable(torch.FloatTensor([self.batch_size]))
         _ = fake_tensor.data.fill_(fake_label)
         
-        rlfk_tensor = Variable(torch.FloatTensor(self.batch_size))
+        rlfk_tensor = Variable(torch.FloatTensor([self.batch_size]))
         _ = rlfk_tensor.data.fill_(0.5)
 
         if self.num_gpu > 0:
@@ -180,7 +180,7 @@ class Trainer(object):
         if self.optimizer == 'adam':
             optimizer = torch.optim.Adam
         else:
-            raise Exception("[!] Caution! Paper didn't use {} opimizer other than Adam".format(config.optimizer))
+            raise Exception("[!] Caution! Paper didn't use {} opimizer other than Adam".format(self.config.optimizer))
             
         optimizer_d = optimizer(
             chain(self.D_B.parameters()),
