@@ -204,7 +204,7 @@ class Trainer(object):
             chain(self.D_L.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2))
         optimizer_3_g = optimizer(
-            chain(self.E_AB.parameters(), self.D_FA.parameters()),
+            chain(self.E_AB.parameters(), self.D_FB.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
         optimizer_3_d = optimizer(
             chain(self.D_F.parameters()),
@@ -280,7 +280,7 @@ class Trainer(object):
             optimizer_1_d.step()
 
             # update D_AB network
-            for gab_step in range(100):
+            for gab_step in range(2):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -366,7 +366,7 @@ class Trainer(object):
             optimizer_2_d.step()
 
             # update D_AB network
-            for gba_step in range(100):
+            for gba_step in range(2):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
