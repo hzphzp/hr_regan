@@ -448,13 +448,13 @@ class Trainer(object):
         x_H = self.D_AB(f_max)
         x_S = self.D_AB(f_min)
 
-        x_H_path = '{}/{}_x_AB.png'.format(path, idx)
-        x_S_path = '{}/{}_x_ABA.png'.format(path, idx)
+        x_H_path = '{}/{}_x_H.png'.format(path, idx)
+        x_S_path = '{}/{}_x_L.png'.format(path, idx)
 
-        vutils.save_image(x_H.data*0.5+0.5, x_H_path)
+        vutils.save_image(x_H.data, x_H_path)
         print("[*] Samples saved: {}".format(x_H_path))
 
-        vutils.save_image(x_S.data*0,5+0.5, x_S_path)
+        vutils.save_image(x_S.data, x_S_path)
         print("[*] Samples saved: {}".format(x_S_path))
 
     def generate_with_A_test(self, inputs, inputs2, path, idx=None):
@@ -478,10 +478,10 @@ class Trainer(object):
         x_AB_path = '{}/{}_x_AB.png'.format(path, idx)
         x_max_path = '{}/{}_x_max.png'.format(path, idx)
 
-        vutils.save_image(x_AB.data * 0.5 + 0.5, x_AB_path)
+        vutils.save_image(x_AB.data, x_AB_path)
         print("[*] Samples saved: {}".format(x_AB_path))
 
-        vutils.save_image(x_max.data * 0.5 + 0.5, x_max_path)
+        vutils.save_image(x_max.data, x_max_path)
         print("[*] Samples saved: {}".format(x_max_path))
 
     '''
@@ -530,8 +530,8 @@ class Trainer(object):
                 print("[!] Test sample generation finished. Samples are in {}".format(test_dir))
                 break
 
-            vutils.save_image(x_A.data*0.5+0.5, '{}/{}_x_A.png'.format(test_dir, step))
-            vutils.save_image(x_B.data*0.5+0.5, '{}/{}_x_B.png'.format(test_dir, step))
+            vutils.save_image(x_A.data, '{}/{}_x_A.png'.format(test_dir, step))
+            vutils.save_image(x_B.data, '{}/{}_x_B.png'.format(test_dir, step))
 
             self.generate_with_A_test(x_A, x_B, test_dir, idx=step)
             step += 1
