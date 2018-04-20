@@ -458,14 +458,21 @@ class Trainer(object):
             # update G_FB network
             for gfb_step in range(2):
                 try:
-                    x_A, x_B = A_loader.next(), B_loader.next()
+                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
                     A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
-                    x_A, x_B = A_loader.next(), B_loader.next()
-                if x_A.size(0) != x_B.size(0):
+                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
+                if x_A_1.size(0) != x_B_1.size(0):
                     print("[!] Sampled dataset from A and B have different # of data. Try resampling...")
                     continue
 
+                x_A_t2a = x_A_1.numpy()
+                x_A_t2a, x_B_t2a = img_random_dis(x_A_t2a)
+
+                x_A = torch.from_numpy(x_A_t2a)
+                x_B = torch.from_numpy(x_B_t2a)
+                x_A = x_A.float()
+                x_B = x_B.float()
                 x_A, x_B = self._get_variable(x_A), self._get_variable(x_B)
 
                 batch_size = x_A.size(0)
