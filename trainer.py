@@ -250,7 +250,7 @@ class Trainer(object):
             f_AB_s = f_AB[:, 511:512, :, :]
             f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
             f_AB_s0 = Variable(f_AB_s0.cuda())
-            f_AB_g0 = torch.zeres([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
+            f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
             f_AB_g0 = Variable(f_AB_g0.cuda())
 
             f_max = torch.cat((f_AB_g, f_AB_s0), 1)
@@ -304,7 +304,7 @@ class Trainer(object):
                 f_AB_s = f_AB[:, 511:512, :, :]
                 f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
                 f_AB_s0 = Variable(f_AB_s0.cuda())
-                f_AB_g0 = torch.zeres([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
+                f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
                 f_AB_g0 = Variable(f_AB_g0.cuda())
 
                 f_max = torch.cat((f_AB_g, f_AB_s0), 1)
@@ -336,7 +336,7 @@ class Trainer(object):
             f_AB_s = f_AB[:, 511:512, :, :]
             f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
             f_AB_s0 = Variable(f_AB_s0.cuda())
-            f_AB_g0 = torch.zeres([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
+            f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
             f_AB_g0 = Variable(f_AB_g0.cuda())
 
             f_max = torch.cat((f_AB_g, f_AB_s0), 1)
@@ -390,7 +390,7 @@ class Trainer(object):
                 f_AB_s = f_AB[:, 511:512, :, :]
                 f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
                 f_AB_s0 = Variable(f_AB_s0.cuda())
-                f_AB_g0 = torch.zeres([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
+                f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
                 f_AB_g0 = Variable(f_AB_g0.cuda())
 
                 f_max = torch.cat((f_AB_g, f_AB_s0), 1)
@@ -440,7 +440,7 @@ class Trainer(object):
         f_AB_s = f_AB[:, 511:512, :, :]
         f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
         f_AB_s0 = Variable(f_AB_s0.cuda())
-        f_AB_g0 = torch.zeres([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
+        f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
         f_AB_g0 = Variable(f_AB_g0.cuda())
 
         f_max = torch.cat((f_AB_g, f_AB_s0), 1)
