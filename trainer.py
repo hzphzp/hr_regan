@@ -280,7 +280,7 @@ class Trainer(object):
             optimizer_1_d.step()
 
             # update D_AB network
-            for gab_step in range(2):
+            for gab_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -366,7 +366,7 @@ class Trainer(object):
             optimizer_2_d.step()
 
             # update D_AB network
-            for gba_step in range(2):
+            for gba_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -456,7 +456,7 @@ class Trainer(object):
             optimizer_3_d.step()
 
             # update G_FB network
-            for gfb_step in range(2):
+            for gfb_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:

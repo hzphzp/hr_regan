@@ -1,6 +1,6 @@
-#PBS    -N withoutregan
-#PBS    -o jobs/withoutregan.out 
-#PBS    -e jobs/withoutregan.err
+#PBS    -N hr_regan_test
+#PBS    -o jobs/hr_regan_test.out 
+#PBS    -e jobs/hr_regan_test.err
 #PBS    -l nodes=1:gpus=2:D
 #PBS    -r y
 cd $PBS_O_WORKDIR
