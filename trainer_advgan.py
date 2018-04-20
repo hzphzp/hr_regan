@@ -2,7 +2,7 @@ from __future__ import print_function
 
 import os
 from glob import glob
-from tqdm import trange
+#from tqdm import trange
 from itertools import chain
 
 import torch
@@ -195,7 +195,7 @@ class Trainer(object):
         vutils.save_image(valid_x_A.data*0.5+0.5, '{}/valid_x_A.png'.format(self.model_dir))
         vutils.save_image(valid_x_B.data*0.5+0.5, '{}/valid_x_B.png'.format(self.model_dir))
 
-        for step in trange(self.start_step, self.max_step):
+        for step in range(self.start_step, self.max_step):
             try:
                 x_A, x_B = A_loader.next(), B_loader.next()
             except StopIteration:
