@@ -24,6 +24,7 @@ def weights_init(m):
         m.weight.data.normal_(1.0, 0.02)
         m.bias.data.fill_(0)
 
+
 class Trainer(object):
     def __init__(self, config, a_data_loader, b_data_loader):
         self.config = config
@@ -202,6 +203,12 @@ class Trainer(object):
         optimizer_2_d = optimizer(
             chain(self.D_L.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2))
+        optimizer_3_g = optimizer(
+            chain(self.E_AB.parameters(), self.D_FA.parameters()),
+            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
+        optimizer_3_d = optimizer(
+            chain(self.D_F.parameters()),
+            lr=self.lr, betas=(self.beta1, self.beta2))
 
         A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
         valid_x_A, valid_x_B = A_loader.next(), B_loader.next()
@@ -358,7 +365,7 @@ class Trainer(object):
             l_dl.backward()
             optimizer_2_d.step()
 
-            # update D_AB network
+            # update D_BA network
             for gba_step in range(2):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
@@ -414,6 +421,95 @@ class Trainer(object):
                 l_gl.backward()
                 optimizer_2_g.step()
 
+            '''update the third model, F to ?'''
+            self.D_F.zero_grad()
+
+            f_AB = self.E_AB(x_A)
+            f_AB_g = f_AB[:, 0:511:, :, :]
+            f_AB_s = f_AB[:, 511:512, :, :]
+            f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
+            f_AB_s0 = Variable(f_AB_s0.cuda())
+            f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
+            f_AB_g0 = Variable(f_AB_g0.cuda())
+
+            f_max = torch.cat((f_AB_g, f_AB_s0), 1)
+            f_min = torch.cat((f_AB_g0, f_AB_s), 1)
+
+            x_FB = self.D_FB(f_AB).detach()
+
+            x_max = self.D_FB(f_max).detach()
+
+            if self.loss == "log_prob":
+                l_df_B_real, l_df_B_fake = bce(self.D_F(x_FB), rlfk_tensor + 0.1), bce(self.D_F(x_max),
+                                                                                     rlfk_tensor - 0.1)
+            elif self.loss == "least_square":
+                l_df_B_real, l_df_B_fake = \
+                    0.5 * torch.mean((self.D_F(x_FB) - 0.6) ** 2), 0.5 * torch.mean((self.D_F(x_max) - 0.4) ** 2)
+            else:
+                raise Exception("[!] Unkown loss type: {}".format(self.loss))
+
+            l_df_B = l_df_B_real + l_df_B_fake
+
+            l_df = l_df_B
+
+            l_df.backward()
+            optimizer_3_d.step()
+
+            # update G_FB network
+            for gfb_step in range(2):
+                try:
+                    x_A, x_B = A_loader.next(), B_loader.next()
+                except StopIteration:
+                    A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
+                    x_A, x_B = A_loader.next(), B_loader.next()
+                if x_A.size(0) != x_B.size(0):
+                    print("[!] Sampled dataset from A and B have different # of data. Try resampling...")
+                    continue
+
+                x_A, x_B = self._get_variable(x_A), self._get_variable(x_B)
+
+                batch_size = x_A.size(0)
+                real_tensor.data.resize_(batch_size).fill_(real_label)
+                fake_tensor.data.resize_(batch_size).fill_(fake_label)
+                rlfk_tensor.data.resize_(batch_size).fill_(0.5)
+
+                self.D_FB.zero_grad()
+                self.E_AB.zero_grad()
+
+                f_AB = self.E_AB(x_A)
+                f_AB_g = f_AB[:, 0:511:, :, :]
+                f_AB_s = f_AB[:, 511:512, :, :]
+                f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
+                f_AB_s0 = Variable(f_AB_s0.cuda())
+                f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
+                f_AB_g0 = Variable(f_AB_g0.cuda())
+
+                f_max = torch.cat((f_AB_g, f_AB_s0), 1)
+                f_min = torch.cat((f_AB_g0, f_AB_s), 1)
+
+                x_FB = self.D_FB(f_AB)
+                x_min = self.D_FB(f_min)
+                x_max = self.D_FB(f_max)
+
+                l_const_FA = d(x_FB, x_A)
+
+                l_const_min = d(x_min, x_A)
+
+                l_const_max = d(x_max, x_A)
+
+                if self.loss == "log_prob":
+                    l_gan_A = bce(self.D_F(x_FB), rlfk_tensor + 0.1)
+                    l_gan_B = bce(self.D_F(x_max), rlfk_tensor - 0.1)
+                elif self.loss == "least_square":
+                    l_gan_A = 0.5 * torch.mean((self.D_F(x_FB) - 0.6) ** 2)
+                    l_gan_B = 0.5 * torch.mean((self.D_F(x_max) - 0.4) ** 2)
+                else:
+                    raise Exception("[!] Unkown loss type: {}".format(self.loss))
+
+                l_gf = 1 * (l_const_FA) + l_gan_A + l_gan_B
+                l_gf.backward()
+                optimizer_3_g.step()
+
             if step % self.log_step == 0:
                 print("[{}/{}] l_dh: {:.4f} l_gan_AB: {:.4f} l_const_AB: {:.4f}". \
                       format(step, self.max_step, l_dh.data[0], l_dl.data[0], l_const_AB.data[0]))
@@ -421,6 +517,10 @@ class Trainer(object):
                 print("[{}/{}] l_dl: {:.4f} l_gan_AA: {:.4f}, l_const_AFA: {:.4f}". \
                       format(step, self.max_step, l_dl.data[0], l_gan_AA.data[0],
                              l_const_AFA.data[0] ))
+
+                print("[{}/{}] l_df: {:.4f} l_gan_A: {:.4f} l_gan_B: {:.4f} l_const_FA: {:.4f}". \
+                      format(step, self.max_step, l_df.data[0], l_gan_A.data[0], l_gan_B.data[0],
+                             l_const_FA.data[0] ))
 
                 self.generate_with_A(valid_x_A, self.model_dir, idx=step)
                 # self.generate_with_B(valid_x_B, self.model_dir, idx=step)

@@ -4,7 +4,6 @@
     <list default="true" id="d313bdf8-6601-49cd-94b0-efb2c1a6fda5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer.py" afterPath="$PROJECT_DIR$/trainer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer_advgan.py" afterPath="$PROJECT_DIR$/trainer_advgan.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="502" column="23" lean-forward="false" selection-start-line="502" selection-start-column="23" selection-end-line="502" selection-end-column="23" />
+            <state relative-caret-position="10505">
+              <caret line="522" column="37" lean-forward="false" selection-start-line="522" selection-start-column="37" selection-end-line="522" selection-end-column="37" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -52,8 +51,8 @@
       <file leaf-file-name="trainer_advgan.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainer_advgan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="417" column="46" lean-forward="true" selection-start-line="417" selection-start-column="46" selection-end-line="417" selection-end-column="46" />
+            <state relative-caret-position="381">
+              <caret line="294" column="43" lean-forward="true" selection-start-line="294" selection-start-column="43" selection-end-line="294" selection-end-column="43" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -159,8 +158,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="114" />
-    <option name="width" value="950" />
-    <option name="height" value="789" />
+    <option name="width" value="940" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -243,10 +242,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="114" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -416,14 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img_random_discmp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -442,16 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainer_advgan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="417" column="46" lean-forward="true" selection-start-line="417" selection-start-column="46" selection-end-line="417" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -460,10 +441,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img_random_discmp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer_advgan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="294" column="43" lean-forward="true" selection-start-line="294" selection-start-column="43" selection-end-line="294" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="502" column="23" lean-forward="false" selection-start-line="502" selection-start-column="23" selection-end-line="502" selection-end-column="23" />
+        <state relative-caret-position="10505">
+          <caret line="522" column="37" lean-forward="false" selection-start-line="522" selection-start-column="37" selection-end-line="522" selection-end-column="37" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
