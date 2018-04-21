@@ -33,6 +33,8 @@ def prepare_dirs_and_logger(config):
         config.model_dir = os.path.join(config.log_dir, config.model_name)
     #huangzp
     config.pic_dir = os.path.join(config.result_dir, config.experiment_name)
+    if os.path.exists(config.pic_dir):
+        config.pic_dir = "{}_{}".format(config.pic_dir, get_time())
     config.data_path = os.path.join(config.data_dir, config.dataset)
 
     for path in [config.log_dir, config.data_dir, config.model_dir, config.pic_dir]:
