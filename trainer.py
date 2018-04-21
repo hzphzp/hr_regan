@@ -554,15 +554,19 @@ class Trainer(object):
         f_min = torch.cat((f_AB_g0, f_AB_s), 1)
         x_H = self.D_AB(f_max)
         x_S = self.D_AB(f_min)
-
+        x_H_full = self.D_AB(f_AB)
         x_H_path = '{}/{}_x_H.png'.format(path, idx)
-        x_S_path = '{}/{}_x_L.png'.format(path, idx)
+        x_S_path = '{}/{}_x_S.png'.format(path, idx)
+        x_H_full_path = '{}/{}_x_H_ful.png'.format(path, idx)
 
         vutils.save_image(x_H.data, x_H_path)
         print("[*] Samples saved: {}".format(x_H_path))
 
         vutils.save_image(x_S.data, x_S_path)
         print("[*] Samples saved: {}".format(x_S_path))
+
+        vutils.save_image(x_H_full.data, x_H_full_path)
+        print("[*] Samples saved:{}".format(x_H_full_path))
 
     def generate_with_A_test(self, inputs, inputs2, path, idx=None):
 
