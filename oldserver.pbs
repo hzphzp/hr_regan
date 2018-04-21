@@ -9,4 +9,4 @@ echo Directory is $PWD
 echo This job runs on following nodes:
 cat $PBS_NODEFILE
 cat $PBS_GPUFILE
-python2 main.py --dataset=img_align_celeba --num_gpu=2 --log_step=20 --save_step=20
+python2 main.py --dataset=img_align_celeba --num_gpu=2 --log_step=20 --save_step=20 --experiment_name='hr_regan'
