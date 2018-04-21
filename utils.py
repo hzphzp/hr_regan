@@ -49,6 +49,7 @@ def save_config(config):
 
     print("[*] MODEL dir: %s" % config.model_dir)
     print("[*] PARAM path: %s" % param_path)
+    pring("[*] pic dir: %s" % config.pic_dir)
 
     with open(param_path, 'w') as fp:
         json.dump(config.__dict__, fp, indent=4, sort_keys=True)
