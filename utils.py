@@ -32,8 +32,7 @@ def prepare_dirs_and_logger(config):
     if not hasattr(config, 'model_dir'):
         config.model_dir = os.path.join(config.log_dir, config.model_name)
     #huangzp
-    if not hasattr(config, 'pic_dir'):
-        config.pic_dir = os.path.join(config.pic_dir, config.experiment_name)
+    config.pic_dir = os.path.join(config.pic_dir, config.experiment_name)
     config.data_path = os.path.join(config.data_dir, config.dataset)
 
     for path in [config.log_dir, config.data_dir, config.model_dir, config.pic_dir]:
