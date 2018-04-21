@@ -45,6 +45,7 @@ class Trainer(object):
         self.cnn_type = config.cnn_type
 
         self.model_dir = config.model_dir
+        self.pic_dir = config.pic_dir
         self.load_path = config.load_path
 
         self.start_step = 0
@@ -529,7 +530,7 @@ class Trainer(object):
                       format(step, self.max_step, l_df.data[0], l_gan_A.data[0], l_gan_B.data[0],
                              l_const_FA.data[0] ))
 
-                self.generate_with_A(valid_x_A, self.model_dir, idx=step)
+                self.generate_with_A(valid_x_A, self.pic_dir, idx=step)
                 # self.generate_with_B(valid_x_B, self.model_dir, idx=step)
 
             if step % self.save_step == self.save_step - 1:
