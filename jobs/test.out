@@ -1,0 +1,7 @@
+Time is date
+Directory is /data1/huangzp/hr_regan
+This job runs on following nodes:
+Gpu107
+Gpu107-gpu5
+Unknown option u
+Usage:/usr/local/sbin/startdocker -P <program path> [-D <data path>]  -s <scriptfile> -c <cmd> <dockerimage> 
