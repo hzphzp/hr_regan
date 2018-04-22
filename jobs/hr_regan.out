@@ -1,0 +1,62 @@
+Time is date
+Directory is /data1/huangzp/hr_regan
+This job runs on following nodes:
+Gpu113
+Gpu113-gpu7
+Gpu113-gpu6
+Gpu113-gpu5
+Gpu113-gpu4
+Gpu113-gpu3
+Gpu113-gpu2
+Gpu113-gpu1
+Gpu113-gpu0
+logs
+data
+logs/img_align_celeba_2018-04-21_17-45-01
+result/hr_regan_2018-04-21_17-45-01
+[*] MODEL dir: logs/img_align_celeba_2018-04-21_17-45-01
+[*] PARAM path: logs/img_align_celeba_2018-04-21_17-45-01/params.json
+[*] pic dir: result/hr_regan_2018-04-21_17-45-01
+[0/500000] l_dh: 1.4017 l_gan_AB: 1.3834 l_const_AB: 0.1647
+[0/500000] l_dl: 1.3834 l_gan_AA: 0.3882, l_const_AFA: 0.2025
+[0/500000] l_df: 1.3913 l_gan_A: 0.7029 l_gan_B: 0.6854 l_const_FA: 0.0760
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/0_x_H.png
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/0_x_S.png
+[*] Samples saved:result/hr_regan_2018-04-21_17-45-01/0_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-21_17-45-01...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[20/500000] l_dh: 1.4270 l_gan_AB: 1.4018 l_const_AB: 0.0601
+[20/500000] l_dl: 1.4018 l_gan_AA: 0.6861, l_const_AFA: 0.0184
+[20/500000] l_df: 1.3706 l_gan_A: 0.6872 l_gan_B: 0.6753 l_const_FA: 0.0119
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/20_x_H.png
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/20_x_S.png
+[*] Samples saved:result/hr_regan_2018-04-21_17-45-01/20_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-21_17-45-01...
+[40/500000] l_dh: 1.3887 l_gan_AB: 1.3894 l_const_AB: 0.0239
+[40/500000] l_dl: 1.3894 l_gan_AA: 0.6946, l_const_AFA: 0.0099
+[40/500000] l_df: 1.3485 l_gan_A: 0.6740 l_gan_B: 0.6732 l_const_FA: 0.0071
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/40_x_H.png
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/40_x_S.png
+[*] Samples saved:result/hr_regan_2018-04-21_17-45-01/40_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-21_17-45-01...
+[60/500000] l_dh: 1.3909 l_gan_AB: 1.3907 l_const_AB: 0.0303
+[60/500000] l_dl: 1.3907 l_gan_AA: 0.6923, l_const_AFA: 0.0084
+[60/500000] l_df: 1.3510 l_gan_A: 0.6760 l_gan_B: 0.6733 l_const_FA: 0.0064
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/60_x_H.png
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/60_x_S.png
+[*] Samples saved:result/hr_regan_2018-04-21_17-45-01/60_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-21_17-45-01...
+[80/500000] l_dh: 1.3887 l_gan_AB: 1.3891 l_const_AB: 0.0194
+[80/500000] l_dl: 1.3891 l_gan_AA: 0.6922, l_const_AFA: 0.0085
+[80/500000] l_df: 1.3474 l_gan_A: 0.6732 l_gan_B: 0.6733 l_const_FA: 0.0073
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/80_x_H.png
+[*] Samples saved: result/hr_regan_2018-04-21_17-45-01/80_x_S.png
+[*] Samples saved:result/hr_regan_2018-04-21_17-45-01/80_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...

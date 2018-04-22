@@ -38,6 +38,7 @@ def prepare_dirs_and_logger(config):
     config.data_path = os.path.join(config.data_dir, config.dataset)
 
     for path in [config.log_dir, config.data_dir, config.model_dir, config.pic_dir]:
+        print(path)
         if not os.path.exists(path):
             os.makedirs(path)
 

@@ -366,7 +366,7 @@ class Trainer(object):
             l_dl.backward()
             optimizer_2_d.step()
 
-            # update D_AB network
+            # update D_BA network
             for gba_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
@@ -456,7 +456,7 @@ class Trainer(object):
             l_df.backward()
             optimizer_3_d.step()
 
-            # update G_FB network
+            # update D_FB network
             for gfb_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
