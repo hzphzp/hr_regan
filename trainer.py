@@ -281,7 +281,7 @@ class Trainer(object):
             optimizer_1_d.step()
 
             # update D_AB network
-            for gab_step in range(100):
+            for gab_step in range(20):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -330,7 +330,7 @@ class Trainer(object):
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
-                l_gh = l_const_AB + l_gan_AB
+                l_gh = 10*l_const_AB + l_gan_AB
 
                 l_gh.backward()
                 optimizer_1_g.step()
@@ -367,7 +367,7 @@ class Trainer(object):
             optimizer_2_d.step()
 
             # update D_BA network
-            for gba_step in range(100):
+            for gba_step in range(20):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -417,7 +417,7 @@ class Trainer(object):
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
-                l_gl = l_const_AFA + l_gan_AA
+                l_gl = 10*l_const_AFA + l_gan_AA
 
                 l_gl.backward()
                 optimizer_2_g.step()
@@ -457,7 +457,7 @@ class Trainer(object):
             optimizer_3_d.step()
 
             # update D_FB network
-            for gfb_step in range(100):
+            for gfb_step in range(1):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:

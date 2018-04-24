@@ -1,0 +1,161 @@
+Time is date
+Directory is /data1/huangzp/hr_regan
+This job runs on following nodes:
+Gpu113
+Gpu113-gpu7
+Gpu113-gpu6
+Gpu113-gpu5
+Gpu113-gpu4
+Gpu113-gpu3
+Gpu113-gpu2
+Gpu113-gpu1
+Gpu113-gpu0
+logs
+data
+logs/img_align_celeba_2018-04-22_10-06-02
+result/hr_regan_o20c10o20c10o1c1
+[*] MODEL dir: logs/img_align_celeba_2018-04-22_10-06-02
+[*] PARAM path: logs/img_align_celeba_2018-04-22_10-06-02/params.json
+[*] pic dir: result/hr_regan_o20c10o20c10o1c1
+[0/500000] l_dh: 1.4002 l_gan_AB: 1.3886 l_const_AB: 0.0611
+[0/500000] l_dl: 1.3886 l_gan_AA: 0.6626, l_const_AFA: 0.1183
+[0/500000] l_df: 1.3912 l_gan_A: 0.7251 l_gan_B: 0.7063 l_const_FA: 0.4794
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/0_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/0_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/0_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[40/500000] l_dh: 1.3731 l_gan_AB: 1.4052 l_const_AB: 0.0333
+[40/500000] l_dl: 1.4052 l_gan_AA: 0.6919, l_const_AFA: 0.0106
+[40/500000] l_df: 1.3904 l_gan_A: 0.6945 l_gan_B: 0.6951 l_const_FA: 0.1137
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/40_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/40_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/40_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[80/500000] l_dh: 1.3540 l_gan_AB: 1.3760 l_const_AB: 0.0332
+[80/500000] l_dl: 1.3760 l_gan_AA: 0.7113, l_const_AFA: 0.0063
+[80/500000] l_df: 1.3863 l_gan_A: 0.6936 l_gan_B: 0.6928 l_const_FA: 0.0779
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/80_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/80_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/80_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[120/500000] l_dh: 1.3787 l_gan_AB: 1.3835 l_const_AB: 0.0273
+[120/500000] l_dl: 1.3835 l_gan_AA: 0.7135, l_const_AFA: 0.0088
+[120/500000] l_df: 1.3864 l_gan_A: 0.6932 l_gan_B: 0.6932 l_const_FA: 0.0498
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/120_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/120_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/120_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[160/500000] l_dh: 1.3770 l_gan_AB: 1.3722 l_const_AB: 0.0310
+[160/500000] l_dl: 1.3722 l_gan_AA: 0.6965, l_const_AFA: 0.0071
+[160/500000] l_df: 1.3864 l_gan_A: 0.6930 l_gan_B: 0.6933 l_const_FA: 0.0290
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/160_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/160_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/160_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[200/500000] l_dh: 1.3870 l_gan_AB: 1.3585 l_const_AB: 0.0246
+[200/500000] l_dl: 1.3585 l_gan_AA: 0.6704, l_const_AFA: 0.0073
+[200/500000] l_df: 1.3863 l_gan_A: 0.6931 l_gan_B: 0.6932 l_const_FA: 0.0296
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/200_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/200_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/200_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[240/500000] l_dh: 1.3905 l_gan_AB: 1.3562 l_const_AB: 0.0276
+[240/500000] l_dl: 1.3562 l_gan_AA: 0.7273, l_const_AFA: 0.0091
+[240/500000] l_df: 1.3863 l_gan_A: 0.6927 l_gan_B: 0.6936 l_const_FA: 0.0254
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/240_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/240_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/240_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[280/500000] l_dh: 1.3677 l_gan_AB: 1.3216 l_const_AB: 0.0238
+[280/500000] l_dl: 1.3216 l_gan_AA: 0.6691, l_const_AFA: 0.0101
+[280/500000] l_df: 1.3863 l_gan_A: 0.6931 l_gan_B: 0.6932 l_const_FA: 0.0195
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/280_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/280_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/280_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[320/500000] l_dh: 1.3688 l_gan_AB: 1.3662 l_const_AB: 0.0280
+[320/500000] l_dl: 1.3662 l_gan_AA: 0.6984, l_const_AFA: 0.0107
+[320/500000] l_df: 1.3863 l_gan_A: 0.6932 l_gan_B: 0.6931 l_const_FA: 0.0206
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/320_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/320_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/320_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[360/500000] l_dh: 1.3676 l_gan_AB: 1.3492 l_const_AB: 0.0261
+[360/500000] l_dl: 1.3492 l_gan_AA: 0.8115, l_const_AFA: 0.0087
+[360/500000] l_df: 1.3863 l_gan_A: 0.6930 l_gan_B: 0.6933 l_const_FA: 0.0184
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/360_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/360_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/360_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[400/500000] l_dh: 1.3794 l_gan_AB: 1.3545 l_const_AB: 0.0401
+[400/500000] l_dl: 1.3545 l_gan_AA: 0.6683, l_const_AFA: 0.0126
+[400/500000] l_df: 1.3863 l_gan_A: 0.6930 l_gan_B: 0.6933 l_const_FA: 0.0141
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/400_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/400_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/400_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[440/500000] l_dh: 1.3960 l_gan_AB: 1.3743 l_const_AB: 0.0224
+[440/500000] l_dl: 1.3743 l_gan_AA: 0.7124, l_const_AFA: 0.0119
+[440/500000] l_df: 1.3863 l_gan_A: 0.6931 l_gan_B: 0.6932 l_const_FA: 0.0136
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/440_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/440_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/440_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[480/500000] l_dh: 1.4241 l_gan_AB: 1.3673 l_const_AB: 0.0212
+[480/500000] l_dl: 1.3673 l_gan_AA: 0.6810, l_const_AFA: 0.0194
+[480/500000] l_df: 1.3865 l_gan_A: 0.6934 l_gan_B: 0.6930 l_const_FA: 0.0146
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/480_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/480_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/480_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[520/500000] l_dh: 1.3708 l_gan_AB: 1.3389 l_const_AB: 0.0243
+[520/500000] l_dl: 1.3389 l_gan_AA: 0.7365, l_const_AFA: 0.0164
+[520/500000] l_df: 1.3863 l_gan_A: 0.6933 l_gan_B: 0.6930 l_const_FA: 0.0169
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/520_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/520_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/520_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[560/500000] l_dh: 1.3661 l_gan_AB: 1.2939 l_const_AB: 0.0239
+[560/500000] l_dl: 1.2939 l_gan_AA: 0.6904, l_const_AFA: 0.0166
+[560/500000] l_df: 1.3863 l_gan_A: 0.6930 l_gan_B: 0.6933 l_const_FA: 0.0150
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/560_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/560_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/560_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[600/500000] l_dh: 1.3610 l_gan_AB: 1.3411 l_const_AB: 0.0268
+[600/500000] l_dl: 1.3411 l_gan_AA: 0.6581, l_const_AFA: 0.0193
+[600/500000] l_df: 1.3863 l_gan_A: 0.6930 l_gan_B: 0.6933 l_const_FA: 0.0123
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/600_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/600_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/600_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[640/500000] l_dh: 1.3927 l_gan_AB: 1.3702 l_const_AB: 0.0248
+[640/500000] l_dl: 1.3702 l_gan_AA: 0.9352, l_const_AFA: 0.0102
+[640/500000] l_df: 1.3863 l_gan_A: 0.6931 l_gan_B: 0.6932 l_const_FA: 0.0142
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/640_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/640_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/640_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[680/500000] l_dh: 1.3826 l_gan_AB: 1.3610 l_const_AB: 0.0248
+[680/500000] l_dl: 1.3610 l_gan_AA: 0.6095, l_const_AFA: 0.0217
+[680/500000] l_df: 1.3863 l_gan_A: 0.6930 l_gan_B: 0.6933 l_const_FA: 0.0131
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/680_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/680_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/680_x_H_ful.png
+[*] Save models to logs/img_align_celeba_2018-04-22_10-06-02...
+[720/500000] l_dh: 1.3994 l_gan_AB: 1.3509 l_const_AB: 0.0238
+[720/500000] l_dl: 1.3509 l_gan_AA: 0.8051, l_const_AFA: 0.0165
+[720/500000] l_df: 1.3863 l_gan_A: 0.6932 l_gan_B: 0.6931 l_const_FA: 0.0100
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/720_x_H.png
+[*] Samples saved: result/hr_regan_o20c10o20c10o1c1/720_x_S.png
+[*] Samples saved:result/hr_regan_o20c10o20c10o1c1/720_x_H_ful.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
