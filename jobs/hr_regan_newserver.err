@@ -1,0 +1,166 @@
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "process_linux.go:398: container init caused \"process_linux.go:381: running prestart hook 1 caused \\\"error running hook: exit status 1, stdout: , stderr: exec command: [/usr/bin/nvidia-container-cli --load-kmods configure --ldconfig=@/sbin/ldconfig --device=all --compute --utility --require=cuda>=8.0 --pid=12230 /home/docker-root/overlay2/6a76ac7da413503687c0e0e6b3ec0b81e9ded64c7b012c5e56a18224b4f68425/merged]\\\\nnvidia-container-cli: initialization error: cuda error: out of memory\\\\n\\\"\"": unknown.
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "process_linux.go:398: container init caused \"process_linux.go:381: running prestart hook 1 caused \\\"error running hook: exit status 1, stdout: , stderr: exec command: [/usr/bin/nvidia-container-cli --load-kmods configure --ldconfig=@/sbin/ldconfig --device=all --compute --utility --require=cuda>=8.0 --pid=13364 /home/docker-root/overlay2/f164ebe92cc586c9ce0249ef454dc4e47a33b68ef3459b87d5d9ea649abc08af/merged]\\\\nnvidia-container-cli: initialization error: cuda error: out of memory\\\\n\\\"\"": unknown.
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 42, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 43, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 44, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "process_linux.go:398: container init caused \"process_linux.go:381: running prestart hook 1 caused \\\"error running hook: exit status 1, stdout: , stderr: exec command: [/usr/bin/nvidia-container-cli --load-kmods configure --ldconfig=@/sbin/ldconfig --device=all --compute --utility --require=cuda>=8.0 --pid=47042 /home/docker-root/overlay2/6aef0bf5971caf0dceb6e723e24f36f94be15bf60de5eb2361ec8788ec2819bc/merged]\\\\nnvidia-container-cli: initialization error: cuda error: out of memory\\\\n\\\"\"": unknown.
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 44, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 6, in <module>
+    from utils import prepare_dirs_and_logger, save_config
+  File "/gdata/huangzp/hr_regan/utils.py", line 42
+    print(path)
+        ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 45, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 47, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 48, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "process_linux.go:398: container init caused \"process_linux.go:381: running prestart hook 1 caused \\\"error running hook: exit status 1, stdout: , stderr: exec command: [/usr/bin/nvidia-container-cli --load-kmods configure --ldconfig=@/sbin/ldconfig --device=all --compute --utility --require=cuda>=8.0 --pid=47839 /home/docker-root/overlay2/36eaeda01874d83d9a54014f3bebc66055f543c1be8d9b7b0f5f30991dd8e76e/merged]\\\\nnvidia-container-cli: initialization error: cuda error: out of memory\\\\n\\\"\"": unknown.
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "process_linux.go:398: container init caused \"process_linux.go:381: running prestart hook 1 caused \\\"error running hook: exit status 1, stdout: , stderr: exec command: [/usr/bin/nvidia-container-cli --load-kmods configure --ldconfig=@/sbin/ldconfig --device=all --compute --utility --require=cuda>=8.0 --pid=48061 /home/docker-root/overlay2/7f4840bf26a1f21b13ed8579e15d344480763805f97c879236e74c90e76b947b/merged]\\\\nnvidia-container-cli: initialization error: cuda error: out of memory\\\\n\\\"\"": unknown.
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "process_linux.go:398: container init caused \"process_linux.go:381: running prestart hook 1 caused \\\"error running hook: exit status 1, stdout: , stderr: exec command: [/usr/bin/nvidia-container-cli --load-kmods configure --ldconfig=@/sbin/ldconfig --device=all --compute --utility --require=cuda>=8.0 --pid=48659 /home/docker-root/overlay2/d13596037f89df1b7f7383b61776711ac2ff03c3a80df6ee1802ddbdf7b5e781/merged]\\\\nnvidia-container-cli: initialization error: cuda error: out of memory\\\\n\\\"\"": unknown.
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "process_linux.go:398: container init caused \"process_linux.go:381: running prestart hook 1 caused \\\"error running hook: exit status 1, stdout: , stderr: exec command: [/usr/bin/nvidia-container-cli --load-kmods configure --ldconfig=@/sbin/ldconfig --device=all --compute --utility --require=cuda>=8.0 --pid=48837 /home/docker-root/overlay2/46348deeda7434b5f1296df1ca0b1176e246d55a17cec94f00db8fdc9c8f6f29/merged]\\\\nnvidia-container-cli: initialization error: cuda error: out of memory\\\\n\\\"\"": unknown.
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 43, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 9, in main
+    prepare_dirs_and_logger(config)
+  File "/gdata/huangzp/hr_regan/utils.py", line 46, in prepare_dirs_and_logger
+    os.makedirs(path)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: "'"
+THCudaCheck FAIL file=/pytorch/torch/lib/THC/generic/THCStorage.cu line=58 error=2 : out of memory
+Traceback (most recent call last):
+  File "/gdata/huangzp/hr_regan/main.py", line 41, in <module>
+    main(config)
+  File "/gdata/huangzp/hr_regan/main.py", line 29, in main
+    trainer = Trainer(config, a_data_loader, b_data_loader)
+  File "/gdata/huangzp/hr_regan/trainer.py", line 62, in __init__
+    self.D_AB.cuda()
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 216, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 146, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 146, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 152, in _apply
+    param.data = fn(param.data)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 216, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+  File "/usr/local/lib/python3.6/dist-packages/torch/_utils.py", line 69, in _cuda
+    return new_type(self.size()).copy_(self, async)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/home/docker-root/overlay2/l/6SN6R2PAOGREUX6C6IYUOHDQYA:/home/docker-root/overlay2/l/CJKQA45L65XFTQZOTNZRQ4G5QB:/home/docker-root/overlay2/l/VBI72RHKN6VAFJABPPZWTOJEEO:/home/docker-root/overlay2/l/OTK23SJI32EC3UZT4COZNHQGBI:/home/docker-root/overlay2/l/THQ44VYKBBIHGABIN3YYMW4HZ7:/home/docker-root/overlay2/l/ELRKBZGRCYACZSTWM7NPRSSZTW:/home/docker-root/overlay2/l/PWJCVOE4KTVD4J2H6UY4HUGKOL:/home/docker-root/overlay2/l/7F7CM2ZTNFRK7DMXG4ZKKEVIKB:/home/docker-root/overla'
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:1168: UserWarning: Using a target size (torch.Size([32])) that is different to the input size (torch.Size([32, 1])) is deprecated. Please ensure they have the same size.
+  "Please ensure they have the same size.".format(target.size(), input.size()))
