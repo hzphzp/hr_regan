@@ -33,7 +33,7 @@ class Trainer(object):
         self.b_data_loader = b_data_loader
 
         self.num_gpu = config.num_gpu
-        self.dataset= config.dataset
+        self.dataset = config.dataset
 
         self.loss = config.loss
         self.lr = config.lr
@@ -56,21 +56,13 @@ class Trainer(object):
         self.build_model()
 
         if self.num_gpu == 1:
-            self.D_H.cuda()
-            self.D_L.cuda()
             self.D_F.cuda()
             self.D_AB.cuda()
-            self.D_BA.cuda()
-            self.D_FB.cuda()
             self.E_AB.cuda()
 
         elif self.num_gpu > 1:
-            self.D_H = nn.DataParallel(self.D_H.cuda(),device_ids=range(self.num_gpu))
-            self.D_L = nn.DataParallel(self.D_L.cuda(),device_ids=range(self.num_gpu))
             self.D_F = nn.DataParallel(self.D_F.cuda(),device_ids=range(self.num_gpu))
             self.D_AB = nn.DataParallel(self.D_AB.cuda(),device_ids=range(self.num_gpu))
-            self.D_BA = nn.DataParallel(self.D_BA.cuda(),device_ids=range(self.num_gpu))
-            self.D_FB = nn.DataParallel(self.D_FB.cuda(),device_ids=range(self.num_gpu))
             self.E_AB = nn.DataParallel(self.E_AB.cuda(),device_ids=range(self.num_gpu))
 
         if self.load_path:
@@ -91,8 +83,7 @@ class Trainer(object):
 
     def build_model(self):
         if self.dataset == 'toy':
-            self.D_H = DiscriminatorFC(2, 1, [self.config.fc_hidden_dim] * self.config.d_num_layer)
-            self.D_L = DiscriminatorFC(2, 1, [self.config.fc_hidden_dim] * self.config.d_num_layer)
+            self.D_F = DiscriminatorFC(2, 1, [self.config.fc_hidden_dim] * self.config.d_num_layer)
         else:
             a_height, a_width, a_channel = self.a_data_loader.shape
             b_height, b_width, b_channel = self.b_data_loader.shape
@@ -100,34 +91,22 @@ class Trainer(object):
             b_channel = 1 
             if self.cnn_type == 0:
                 #conv_dims, deconv_dims = [64, 128, 256, 512], [512, 256, 128, 64]
-                conv_dims, deconv_dims = [64, 128, 256, 512], [256, 128, 64]
+                conv_dims, deconv_dims = [64, 128, 256, 1024], [256, 128, 64]
             elif self.cnn_type == 1:
                 #conv_dims, deconv_dims = [32, 64, 128, 256], [256, 128, 64, 32]
-                conv_dims, deconv_dims = [32, 64, 128, 256], [128, 64, 32]
+                conv_dims, deconv_dims = [32, 64, 128, 512], [128, 64, 32]
             else:
                 raise Exception("[!] cnn_type {} is not defined".format(self.cnn_type))
 
-            self.D_H = DiscriminatorCNN(
-                    a_channel, 1, conv_dims, self.num_gpu)
-            self.D_L = DiscriminatorCNN(
-                    b_channel, 1, conv_dims, self.num_gpu)
             self.D_F = DiscriminatorCNN(
                     a_channel, 1, conv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
-                    conv_dims[-1], b_channel, deconv_dims, self.num_gpu)
-            self.D_BA = DecoderCNN(
-                    conv_dims[-1], b_channel, deconv_dims, self.num_gpu)
-            self.D_FB = DecoderCNN(
-                    conv_dims[-1], b_channel, deconv_dims, self.num_gpu)
+                    conv_dims[-1]/2, b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
                     a_channel, conv_dims, self.num_gpu)
 
-            self.D_H.apply(weights_init)
-            self.D_L.apply(weights_init)
             self.D_F.apply(weights_init)
             self.D_AB.apply(weights_init)
-            self.D_BA.apply(weights_init)
-            self.D_FB.apply(weights_init)
             self.E_AB.apply(weights_init)
 
     def load_model(self):
@@ -192,29 +171,16 @@ class Trainer(object):
         else:
             raise Exception("[!] Caution! Paper didn't use {} opimizer other than Adam".format(self.config.optimizer))
 
-        optimizer_1_g = optimizer(
+        optimizer_g = optimizer(
             chain(self.E_AB.parameters(), self.D_AB.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
-        optimizer_1_d = optimizer(
-            chain(self.D_H.parameters()),
-            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
-        optimizer_2_g = optimizer(
-            chain(self.E_AB.parameters(), self.D_BA.parameters()),
-            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
-        optimizer_2_d = optimizer(
-            chain(self.D_L.parameters()),
-            lr=self.lr, betas=(self.beta1, self.beta2))
-        optimizer_3_g = optimizer(
-            chain(self.E_AB.parameters(), self.D_FB.parameters()),
-            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
-        optimizer_3_d = optimizer(
+        optimizer_d = optimizer(
             chain(self.D_F.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2))
 
         A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
         valid_x_A, valid_x_B = A_loader.next(), B_loader.next()
         x_A_t2a=valid_x_A.numpy()
-        #x_B_t2a=x_B.numpy()
         x_A_t2a, x_B_t2a =img_random_dis(x_A_t2a)
         valid_x_A=torch.from_numpy(x_A_t2a)
         valid_x_B=torch.from_numpy(x_B_t2a)
@@ -222,8 +188,8 @@ class Trainer(object):
         valid_x_B=valid_x_B.float()
         valid_x_A, valid_x_B = self._get_variable(valid_x_A), self._get_variable(valid_x_B)
 
-        vutils.save_image(valid_x_A.data, '{}/valid_x_A.png'.format(self.model_dir))
-        vutils.save_image(valid_x_B.data, '{}/valid_x_B.png'.format(self.model_dir))
+        vutils.save_image(valid_x_A.data, '{}/valid_x_A.png'.format(self.pic_dir))
+        vutils.save_image(valid_x_B.data, '{}/valid_x_B.png'.format(self.pic_dir))
 
         for step in range(self.start_step, self.max_step):
             try:
@@ -249,39 +215,33 @@ class Trainer(object):
             fake_tensor.data.resize_(batch_size).fill_(fake_label)
             rlfk_tensor.data.resize_(batch_size).fill_(0.5)
 
-            '''update the first model: L to H'''
-            # update D_H network
-            self.D_H.zero_grad()
+            # update the D_F to separate the feature
+            self.D_F.zero_grad()
 
             f_AB = self.E_AB(x_A)
-            f_AB_g = f_AB[:, 0:511:, :, :]
-            f_AB_s = f_AB[:, 511:512, :, :]
-            f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
-            f_AB_s0 = Variable(f_AB_s0.cuda())
-            f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
-            f_AB_g0 = Variable(f_AB_g0.cuda())
+            f_AB_g = f_AB[:, 0:512, :, :]
+            f_AB_s = f_AB[:, 512:1024, :, :]
 
-            f_max = torch.cat((f_AB_g, f_AB_s0), 1)
-            f_min = torch.cat((f_AB_g0, f_AB_s), 1)
-            x_H = self.D_AB(f_max).detach()
+            x_FB = self.D_AB(f_AB_g+f_AB_s).detach()
+
+            x_max = self.D_AB(f_AB_g).detach()
 
             if self.loss == "log_prob":
-                l_dh_B_real, l_dh_B_fake = bce(self.D_H(x_B), real_tensor), bce(self.D_H(x_H), fake_tensor)
+                l_df_B_real, l_df_B_fake = bce(self.D_F(x_FB), rlfk_tensor + 0.1), bce(self.D_F(x_max),
+                                                                                     rlfk_tensor - 0.1)
             elif self.loss == "least_square":
-                l_dh_B_real, l_dh_B_fake = \
-                    0.5 * torch.mean((self.D_H(x_B) - 1)**2), 0.5 * torch.mean((self.D_H(x_H))**2)
+                l_df_B_real, l_df_B_fake = \
+                    0.5 * torch.mean((self.D_F(x_FB) - 0.6) ** 2), 0.5 * torch.mean((self.D_F(x_max) - 0.4) ** 2)
             else:
-                raise Exception("[!] Unknown loss type: {}".format(self.loss))
+                raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
-            l_dh_B = l_dh_B_real + l_dh_B_fake
+            l_df_B = l_df_B_real + l_df_B_fake
+            l_df = l_df_B
+            l_df.backward()
+            optimizer_d.step()
 
-            l_dh = l_dh_B
-
-            l_dh.backward()
-            optimizer_1_d.step()
-
-            # update D_AB network
-            for gab_step in range(20):
+            # update E_AB and D_AB network
+            for g_step in range(50):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -308,226 +268,41 @@ class Trainer(object):
                 self.D_AB.zero_grad()
 
                 f_AB = self.E_AB(x_A)
-                f_AB_g = f_AB[:, 0:511:, :, :]
-                f_AB_s = f_AB[:, 511:512, :, :]
-                f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
-                f_AB_s0 = Variable(f_AB_s0.cuda())
-                f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
-                f_AB_g0 = Variable(f_AB_g0.cuda())
+                f_AB_g = f_AB[:, 0:512, :, :]
+                f_AB_s = f_AB[:, 512:1024, :, :]
 
-                f_max = torch.cat((f_AB_g, f_AB_s0), 1)
-                f_min = torch.cat((f_AB_g0, f_AB_s), 1)
-                x_H = self.D_AB(f_max)
-                
+                x_H = self.D_AB(f_AB_g)
                 l_const_AB = d(x_H, x_B)
-                
-                dh_x_AB = self.D_H(x_H)
+
+                x_L = self.D_AB(f_AB_g+f_AB_s)
+                l_const_AA = d(x_L, x_A)
+                psnr_H = self.psnr(x_B, x_H)
+                psnr_L = self.psnr(x_B, x_L)
 
                 if self.loss == "log_prob":
-                    l_gan_AB = bce(dh_x_AB, real_tensor)
+                    l_gan_A = bce(self.D_F(x_L), rlfk_tensor+0.1)
+                    l_gan_B = bce(self.D_F(x_H), rlfk_tensor-0.1)
                 elif self.loss == "least_square":
-                    l_gan_AB = 0.5 * torch.mean((dh_x_AB - 1)**2)
+                    l_gan_A = 0.5 * torch.mean((self.D_F(x_L) - 0.6)**2)
+                    l_gan_B = 0.5 * torch.mean((self.D_F(x_H) - 0.4)**2)
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
-                l_gh = 10*l_const_AB + l_gan_AB
+                l_gf = 10*l_const_AB + 10*l_const_AA + l_gan_A + l_gan_B
 
-                l_gh.backward()
-                optimizer_1_g.step()
-
-            '''update the second model: L to L'''
-            # update D_L network
-            self.D_L.zero_grad()
-
-            f_AB = self.E_AB(x_A)
-            f_AB_g = f_AB[:, 0:511:, :, :]
-            f_AB_s = f_AB[:, 511:512, :, :]
-            f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
-            f_AB_s0 = Variable(f_AB_s0.cuda())
-            f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
-            f_AB_g0 = Variable(f_AB_g0.cuda())
-
-            f_max = torch.cat((f_AB_g, f_AB_s0), 1)
-            f_min = torch.cat((f_AB_g0, f_AB_s), 1)
-            x_L = self.D_BA(f_AB).detach()
-
-            if self.loss == "log_prob":
-                l_dl_A_real, l_dl_A_fake = bce(self.D_L(x_A), real_tensor), bce(self.D_L(x_L), fake_tensor)
-            elif self.loss == "least_square":
-                l_dl_A_real, l_dl_A_fake = \
-                    0.5 * torch.mean((self.D_L(x_A) - 1) ** 2), 0.5 * torch.mean((self.D_L(x_L)) ** 2)
-            else:
-                raise Exception("[!] Unknown loss type: {}".format(self.loss))
-
-            l_dl_A = l_dl_A_real + l_dl_A_fake
-
-            l_dl = l_dl_A
-
-            l_dl.backward()
-            optimizer_2_d.step()
-
-            # update D_BA network
-            for gba_step in range(20):
-                try:
-                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
-                except StopIteration:
-                    A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
-                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
-                if x_A_1.size(0) != x_B_1.size(0):
-                    print("[!] Sampled dataset from A and B have different # of data. Try resampling...")
-                    continue
-
-                x_A_t2a = x_A_1.numpy()
-                x_A_t2a, x_B_t2a = img_random_dis(x_A_t2a)
-
-                x_A = torch.from_numpy(x_A_t2a)
-                x_B = torch.from_numpy(x_B_t2a)
-                x_A = x_A.float()
-                x_B = x_B.float()
-                x_A, x_B = self._get_variable(x_A), self._get_variable(x_B)
-
-                batch_size = x_A.size(0)
-                real_tensor.data.resize_(batch_size).fill_(real_label)
-                fake_tensor.data.resize_(batch_size).fill_(fake_label)
-
-                self.E_AB.zero_grad()
-                self.D_BA.zero_grad()
-
-                f_AB = self.E_AB(x_A)
-                f_AB_g = f_AB[:, 0:511:, :, :]
-                f_AB_s = f_AB[:, 511:512, :, :]
-                f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
-                f_AB_s0 = Variable(f_AB_s0.cuda())
-                f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
-                f_AB_g0 = Variable(f_AB_g0.cuda())
-
-                f_max = torch.cat((f_AB_g, f_AB_s0), 1)
-                f_min = torch.cat((f_AB_g0, f_AB_s), 1)
-
-                x_L = self.D_BA(f_AB)
-
-                l_const_AFA = d(x_L, x_A)
-
-                dl_x_AA = self.D_L(x_L)
-
-                if self.loss == "log_prob":
-                    l_gan_AA = bce(dl_x_AA, real_tensor)
-                elif self.loss == "least_square":
-                    l_gan_AA = 0.5 * torch.mean((dl_x_AA - 1) ** 2)
-                else:
-                    raise Exception("[!] Unkown loss type: {}".format(self.loss))
-                l_gl = 10*l_const_AFA + l_gan_AA
-
-                l_gl.backward()
-                optimizer_2_g.step()
-
-            '''update the third model, F to ?'''
-            self.D_F.zero_grad()
-
-            f_AB = self.E_AB(x_A)
-            f_AB_g = f_AB[:, 0:511:, :, :]
-            f_AB_s = f_AB[:, 511:512, :, :]
-            f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
-            f_AB_s0 = Variable(f_AB_s0.cuda())
-            f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
-            f_AB_g0 = Variable(f_AB_g0.cuda())
-
-            f_max = torch.cat((f_AB_g, f_AB_s0), 1)
-            f_min = torch.cat((f_AB_g0, f_AB_s), 1)
-
-            x_FB = self.D_FB(f_AB).detach()
-
-            x_max = self.D_FB(f_max).detach()
-
-            if self.loss == "log_prob":
-                l_df_B_real, l_df_B_fake = bce(self.D_F(x_FB), rlfk_tensor + 0.1), bce(self.D_F(x_max),
-                                                                                     rlfk_tensor - 0.1)
-            elif self.loss == "least_square":
-                l_df_B_real, l_df_B_fake = \
-                    0.5 * torch.mean((self.D_F(x_FB) - 0.6) ** 2), 0.5 * torch.mean((self.D_F(x_max) - 0.4) ** 2)
-            else:
-                raise Exception("[!] Unkown loss type: {}".format(self.loss))
-
-            l_df_B = l_df_B_real + l_df_B_fake
-
-            l_df = l_df_B
-
-            l_df.backward()
-            optimizer_3_d.step()
-
-            # update D_FB network
-            for gfb_step in range(1):
-                try:
-                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
-                except StopIteration:
-                    A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
-                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
-                if x_A_1.size(0) != x_B_1.size(0):
-                    print("[!] Sampled dataset from A and B have different # of data. Try resampling...")
-                    continue
-
-                x_A_t2a = x_A_1.numpy()
-                x_A_t2a, x_B_t2a = img_random_dis(x_A_t2a)
-
-                x_A = torch.from_numpy(x_A_t2a)
-                x_B = torch.from_numpy(x_B_t2a)
-                x_A = x_A.float()
-                x_B = x_B.float()
-                x_A, x_B = self._get_variable(x_A), self._get_variable(x_B)
-
-                batch_size = x_A.size(0)
-                real_tensor.data.resize_(batch_size).fill_(real_label)
-                fake_tensor.data.resize_(batch_size).fill_(fake_label)
-                rlfk_tensor.data.resize_(batch_size).fill_(0.5)
-
-                self.D_FB.zero_grad()
-                self.E_AB.zero_grad()
-
-                f_AB = self.E_AB(x_A)
-                f_AB_g = f_AB[:, 0:511:, :, :]
-                f_AB_s = f_AB[:, 511:512, :, :]
-                f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
-                f_AB_s0 = Variable(f_AB_s0.cuda())
-                f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
-                f_AB_g0 = Variable(f_AB_g0.cuda())
-
-                f_max = torch.cat((f_AB_g, f_AB_s0), 1)
-                f_min = torch.cat((f_AB_g0, f_AB_s), 1)
-
-                x_FB = self.D_FB(f_AB)
-                x_min = self.D_FB(f_min)
-                x_max = self.D_FB(f_max)
-
-                l_const_FA = d(x_FB, x_A)
-
-                l_const_min = d(x_min, x_A)
-
-                l_const_max = d(x_max, x_A)
-
-                if self.loss == "log_prob":
-                    l_gan_A = bce(self.D_F(x_FB), rlfk_tensor + 0.1)
-                    l_gan_B = bce(self.D_F(x_max), rlfk_tensor - 0.1)
-                elif self.loss == "least_square":
-                    l_gan_A = 0.5 * torch.mean((self.D_F(x_FB) - 0.6) ** 2)
-                    l_gan_B = 0.5 * torch.mean((self.D_F(x_max) - 0.4) ** 2)
-                else:
-                    raise Exception("[!] Unkown loss type: {}".format(self.loss))
-
-                l_gf = 1 * (l_const_FA) + l_gan_A + l_gan_B
                 l_gf.backward()
-                optimizer_3_g.step()
+                optimizer_g.step()
 
             if step % self.log_step == 0:
-                print("[{}/{}] l_dh: {:.4f} l_gan_AB: {:.4f} l_const_AB: {:.4f}". \
-                      format(step, self.max_step, l_dh.data[0], l_dl.data[0], l_const_AB.data[0]))
+                print("[{}/{}] l_df: {:.4f} l_df_real: {:.4f} l_df_fake: {:.4f}". \
+                      format(step, self.max_step, l_df.data[0], l_df_B_real.data[0], l_df_B_fake.data[0]))
 
-                print("[{}/{}] l_dl: {:.4f} l_gan_AA: {:.4f}, l_const_AFA: {:.4f}". \
-                      format(step, self.max_step, l_dl.data[0], l_gan_AA.data[0],
-                             l_const_AFA.data[0] ))
+                print("[{}/{}] l_gf: {:.4f} l_const_AB: {:.4f}, l_const_AA: {:.4f}". \
+                      format(step, self.max_step, l_gf.data[0], l_const_AB.data[0],
+                             l_const_AA.data[0] ))
 
-                print("[{}/{}] l_df: {:.4f} l_gan_A: {:.4f} l_gan_B: {:.4f} l_const_FA: {:.4f}". \
-                      format(step, self.max_step, l_df.data[0], l_gan_A.data[0], l_gan_B.data[0],
-                             l_const_FA.data[0] ))
+                print("[{}/{}] l_gan_A: {:.4f} l_gan_B: {:.4f}". \
+                      format(step, self.max_step, l_gan_A.data[0], l_gan_B.data[0]))
 
                 self.generate_with_A(valid_x_A, self.pic_dir, idx=step)
                 # self.generate_with_B(valid_x_B, self.model_dir, idx=step)
@@ -538,26 +313,20 @@ class Trainer(object):
                 torch.save(self.E_AB.state_dict(), '{}/E_AB_{}.pth'.format(self.model_dir, step))
                 torch.save(self.D_AB.state_dict(), '{}/D_AB_{}.pth'.format(self.model_dir, step))
 
-                # torch.save(self.D_A.state_dict(), '{}/D_A_{}.pth'.format(self.model_dir, step))
+                torch.save(self.D_F.state_dict(), '{}/D_F_{}.pth'.format(self.model_dir, step))
                 # torch.save(self.D_B.state_dict(), '{}/D_B_{}.pth'.format(self.model_dir, step))
 
     def generate_with_A(self, inputs, path, idx=None):
         f_AB = self.E_AB(inputs)
-        f_AB_g = f_AB[:, 0:511:, :, :]
-        f_AB_s = f_AB[:, 511:512, :, :]
-        f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
-        f_AB_s0 = Variable(f_AB_s0.cuda())
-        f_AB_g0 = torch.zeros([f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]])
-        f_AB_g0 = Variable(f_AB_g0.cuda())
+        f_AB_g = f_AB[:, 0:512:, :, :]
+        f_AB_s = f_AB[:, 512:1024, :, :]
 
-        f_max = torch.cat((f_AB_g, f_AB_s0), 1)
-        f_min = torch.cat((f_AB_g0, f_AB_s), 1)
-        x_H = self.D_AB(f_max)
-        x_S = self.D_AB(f_min)
-        x_H_full = self.D_AB(f_AB)
+        x_H = self.D_AB(f_AB_g)
+        x_S = self.D_AB(f_AB_s)
+        x_L = self.D_AB(f_AB_g+f_AB_s)
         x_H_path = '{}/{}_x_H.png'.format(path, idx)
         x_S_path = '{}/{}_x_S.png'.format(path, idx)
-        x_H_full_path = '{}/{}_x_H_ful.png'.format(path, idx)
+        x_L_path = '{}/{}_x_L.png'.format(path, idx)
 
         vutils.save_image(x_H.data, x_H_path)
         print("[*] Samples saved: {}".format(x_H_path))
@@ -565,11 +334,11 @@ class Trainer(object):
         vutils.save_image(x_S.data, x_S_path)
         print("[*] Samples saved: {}".format(x_S_path))
 
-        vutils.save_image(x_H_full.data, x_H_full_path)
-        print("[*] Samples saved:{}".format(x_H_full_path))
+        vutils.save_image(x_L.data, x_L_path)
+        print("[*] Samples saved: {}".format(x_L_path))
 
     def generate_with_A_test(self, inputs, inputs2, path, idx=None):
-
+        #todo： 不会用到这个函数，有空再改
         f_AB = self.E_AB(inputs)
 
         f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
