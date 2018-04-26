@@ -69,7 +69,7 @@ class Trainer(object):
             self.load_model()
     @staticmethod
     def psnr(original, compared):
-        compared = Variable(compared.data(), requires_grad=False)
+        compared = Variable(compared.data, requires_grad=False)
         d = nn.MSELoss()
         arg_psnr = 0
         for i in range(original.size(0)):
@@ -242,7 +242,7 @@ class Trainer(object):
             optimizer_d.step()
 
             # update E_AB and D_AB network
-            for g_step in range(50):
+            for g_step in range(2):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
