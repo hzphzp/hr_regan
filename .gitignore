@@ -10,6 +10,7 @@ outputs
 
 # Log
 logs
+.idea
 
 # ETC
 paper.pdf
