@@ -1,0 +1,6 @@
+fatal: Not a git repository (or any of the parent directories): .git
+ssh_exchange_identification: read: Connection reset by peer
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
