@@ -338,7 +338,6 @@ class Trainer(object):
         print("[*] Samples saved: {}".format(x_L_path))
 
     def generate_with_A_test(self, inputs, inputs2, path, idx=None):
-        #todo： 不会用到这个函数，有空再改
         f_AB = self.E_AB(inputs)
 
         f_AB_s0 = torch.zeros([f_AB.size()[0], 1, f_AB.size()[2], f_AB.size()[3]])
