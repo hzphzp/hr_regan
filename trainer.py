@@ -69,9 +69,10 @@ class Trainer(object):
             self.load_model()
     @staticmethod
     def psnr(original, compared):
+        compared = Variable(compared.data(), requires_grad=False)
         d = nn.MSELoss()
         arg_psnr = 0
-        for i in range(original.size[0]):
+        for i in range(original.size(0)):
             mse = d(original[i], compared[i])
             try:
                 psnr = 10 * torch.log(4/ mse)/np.log(10)
