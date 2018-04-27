@@ -226,8 +226,10 @@ class Trainer(object):
 
             f_AB = self.E_AB(x_A)
             f_AB_g = f_AB[:, 0:512, :, :]
+            print(f_AB_g.size())
             f_AB_s = f_AB[:, 512:1024, :, :]
             f_AB_g = f_AB_g.detach()
+            print(f_AB_g.size())
             f_AB_s = f_AB_s.detach()
 
             if self.loss == "log_prob":
