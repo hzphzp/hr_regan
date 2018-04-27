@@ -277,11 +277,11 @@ class Trainer(object):
                 f_AB_s = f_AB[:, 512:1024, :, :]
 
                 if self.loss == "log_prob":
-                    l_gan_g = bce(self.D_F(f_AB_g.detach()), rlfk_tensor+0.1)
-                    l_gan_s = bce(self.D_F(f_AB_s.detach()), rlfk_tensor-0.1)
+                    l_gan_g = bce(self.D_F(f_AB_g), rlfk_tensor+0.1)
+                    l_gan_s = bce(self.D_F(f_AB_s), rlfk_tensor-0.1)
                 elif self.loss == "least_square":
-                    l_gan_g = 0.5 * torch.mean((self.D_F(f_AB_g.detach()) - 0.6)**2)
-                    l_gan_s = 0.5 * torch.mean((self.D_F(f_AB_s.detach()) - 0.4)**2)
+                    l_gan_g = 0.5 * torch.mean((self.D_F(f_AB_g) - 0.6)**2)
+                    l_gan_s = 0.5 * torch.mean((self.D_F(f_AB_s) - 0.4)**2)
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
