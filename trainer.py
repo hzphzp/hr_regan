@@ -104,7 +104,7 @@ class Trainer(object):
             self.D_AB = DecoderCNN(
                     int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
-                    a_channel, conv_dims, self.num_gpu)
+                    a_channel, deconv_dims, self.num_gpu)
 
             self.D_F.apply(weights_init)
             self.D_AB.apply(weights_init)
