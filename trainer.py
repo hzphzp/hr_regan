@@ -174,11 +174,11 @@ class Trainer(object):
 
         optimizer_Decoder = optimizer(
             chain(self.D_AB.parameters()),
-            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
+            lr=self.lr, betas=(self.beta1, self.beta2))
 
         optimizer_Encoder = optimizer(
             chain(self.E_AB.parameters()),
-            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
+            lr=self.lr, betas=(self.beta1, self.beta2))
 
         optimizer_Discriminator = optimizer(
             chain(self.D_F.parameters()),
