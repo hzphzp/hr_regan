@@ -180,11 +180,11 @@ class DiscriminatorCNN(nn.Module):
         self.layers = []
 
         prev_dim = hidden_dims[0]
-        self.layers.append(nn.Conv2d(input_channel, prev_dim, 4, 2, 1, bias=True))
+        self.layers.append(nn.Conv2d(input_channel, prev_dim, 4, 1, 1, bias=True))
         self.layers.append(nn.LeakyReLU(0.2, inplace=True))
 
         for out_dim in hidden_dims[1:]:
-            self.layers.append(nn.Conv2d(prev_dim, out_dim, 4, 2, 1, bias=False))
+            self.layers.append(nn.Conv2d(prev_dim, out_dim, 4, 1, 1, bias=False))
             self.layers.append(nn.BatchNorm2d(out_dim))
             self.layers.append(nn.LeakyReLU(0.2, inplace=True))
             prev_dim = out_dim
