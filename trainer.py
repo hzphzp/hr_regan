@@ -100,7 +100,7 @@ class Trainer(object):
                 raise Exception("[!] cnn_type {} is not defined".format(self.cnn_type))
 
             self.D_F = DiscriminatorCNN(
-                    int(conv_dims[-1]/2), 1, conv_dims, self.num_gpu)
+                    a_channel, 1, conv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
                     int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
