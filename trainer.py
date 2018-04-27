@@ -76,9 +76,9 @@ class Trainer(object):
             mse = d(original[i], compared[i])
             try:
                 psnr = 10 * torch.log(4/ mse)/np.log(10)
+                arg_psnr = arg_psnr + psnr
             except:
                 pass
-            arg_psnr = arg_psnr + psnr
         arg_psnr = arg_psnr/original.size(0)
         return arg_psnr
 
@@ -100,7 +100,7 @@ class Trainer(object):
                 raise Exception("[!] cnn_type {} is not defined".format(self.cnn_type))
 
             self.D_F = DiscriminatorCNN(
-                    int(conv_dims[-1]/2), 1, conv_dims, self.num_gpu)
+                    a_channel, 1, conv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
                     int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
@@ -173,7 +173,7 @@ class Trainer(object):
             raise Exception("[!] Caution! Paper didn't use {} optimizer other than Adam".format(self.config.optimizer))
 
         optimizer_Decoder = optimizer(
-            chain(self.D_AB.parameters()),
+            chain(self.D_AB.parameters(), self.E_AB.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2))
 
         optimizer_Encoder = optimizer(
@@ -193,8 +193,7 @@ class Trainer(object):
         valid_x_A=valid_x_A.float()
         valid_x_B=valid_x_B.float()
         valid_x_A, valid_x_B = self._get_variable(valid_x_A), self._get_variable(valid_x_B)
-        print(valid_x_A.size())
-        self.D_F(valid_x_A)
+
         vutils.save_image(valid_x_A.data, '{}/valid_x_A.png'.format(self.pic_dir))
         vutils.save_image(valid_x_B.data, '{}/valid_x_B.png'.format(self.pic_dir))
 
@@ -228,6 +227,8 @@ class Trainer(object):
             f_AB = self.E_AB(x_A)
             f_AB_g = f_AB[:, 0:512, :, :]
             f_AB_s = f_AB[:, 512:1024, :, :]
+            f_AB_g = f_AB_g.detach()
+            f_AB_s = f_AB_s.detach()
 
             if self.loss == "log_prob":
                 l_df_B_real, l_df_B_fake = bce(self.D_F(f_AB_g), rlfk_tensor + 0.1), bce(self.D_F(f_AB_s),
@@ -274,11 +275,11 @@ class Trainer(object):
                 f_AB_s = f_AB[:, 512:1024, :, :]
 
                 if self.loss == "log_prob":
-                    l_gan_g = bce(self.D_F(f_AB_g), rlfk_tensor+0.1)
-                    l_gan_s = bce(self.D_F(f_AB_s), rlfk_tensor-0.1)
+                    l_gan_g = bce(self.D_F(f_AB_g.detach()), rlfk_tensor+0.1)
+                    l_gan_s = bce(self.D_F(f_AB_s.detach()), rlfk_tensor-0.1)
                 elif self.loss == "least_square":
-                    l_gan_g = 0.5 * torch.mean((self.D_F(f_AB_g) - 0.6)**2)
-                    l_gan_s = 0.5 * torch.mean((self.D_F(f_AB_s) - 0.4)**2)
+                    l_gan_g = 0.5 * torch.mean((self.D_F(f_AB_g.detach()) - 0.6)**2)
+                    l_gan_s = 0.5 * torch.mean((self.D_F(f_AB_s.detach()) - 0.4)**2)
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
@@ -311,6 +312,7 @@ class Trainer(object):
                 real_tensor.data.resize_(batch_size).fill_(real_label)
                 fake_tensor.data.resize_(batch_size).fill_(fake_label)
 
+                self.E_AB.zero_grad()
                 self.D_AB.zero_grad()
 
                 f_AB = self.E_AB(x_A)
