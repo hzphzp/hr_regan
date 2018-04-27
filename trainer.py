@@ -170,14 +170,19 @@ class Trainer(object):
         if self.optimizer == 'adam':
             optimizer = torch.optim.Adam
         else:
-            raise Exception("[!] Caution! Paper didn't use {} opimizer other than Adam".format(self.config.optimizer))
+            raise Exception("[!] Caution! Paper didn't use {} optimizer other than Adam".format(self.config.optimizer))
 
-        optimizer_g = optimizer(
-            chain(self.E_AB.parameters(), self.D_AB.parameters()),
+        optimizer_Decoder = optimizer(
+            chain(self.D_AB.parameters()),
             lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
-        optimizer_d = optimizer(
+
+        optimizer_Encoder = optimizer(
+            chain(self.E_AB.parameters()),
+            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
+
+        optimizer_Discriminator = optimizer(
             chain(self.D_F.parameters()),
-            lr=self.lr, betas=(self.beta1, self.beta2))
+            lr=self.lr, betas=(self.beta1, self.beta2), weight_decay=self.weight_decay)
 
         A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
         valid_x_A, valid_x_B = A_loader.next(), B_loader.next()
@@ -223,26 +228,22 @@ class Trainer(object):
             f_AB_g = f_AB[:, 0:512, :, :]
             f_AB_s = f_AB[:, 512:1024, :, :]
 
-            x_FB = self.D_AB(f_AB_g+f_AB_s).detach()
-
-            x_max = self.D_AB(f_AB_g).detach()
-
             if self.loss == "log_prob":
-                l_df_B_real, l_df_B_fake = bce(self.D_F(x_FB), rlfk_tensor + 0.1), bce(self.D_F(x_max),
+                l_df_B_real, l_df_B_fake = bce(self.D_F(f_AB_g), rlfk_tensor + 0.1), bce(self.D_F(f_AB_s),
                                                                                      rlfk_tensor - 0.1)
             elif self.loss == "least_square":
                 l_df_B_real, l_df_B_fake = \
-                    0.5 * torch.mean((self.D_F(x_FB) - 0.6) ** 2), 0.5 * torch.mean((self.D_F(x_max) - 0.4) ** 2)
+                    0.5 * torch.mean((self.D_F(f_AB_g) - 0.6) ** 2), 0.5 * torch.mean((self.D_F(f_AB_s) - 0.4) ** 2)
             else:
                 raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
             l_df_B = l_df_B_real + l_df_B_fake
-            l_df = l_df_B
-            l_df.backward()
-            optimizer_d.step()
+            l_disciminator = l_df_B
+            l_disciminator.backward()
+            optimizer_Discriminator.step()
 
-            # update E_AB and D_AB network
-            for g_step in range(500):
+            # update E_AB network
+            for e_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -266,6 +267,49 @@ class Trainer(object):
                 fake_tensor.data.resize_(batch_size).fill_(fake_label)
 
                 self.E_AB.zero_grad()
+
+                f_AB = self.E_AB(x_A)
+                f_AB_g = f_AB[:, 0:512, :, :]
+                f_AB_s = f_AB[:, 512:1024, :, :]
+
+                if self.loss == "log_prob":
+                    l_gan_g = bce(self.D_F(f_AB_g), rlfk_tensor+0.1)
+                    l_gan_s = bce(self.D_F(f_AB_s), rlfk_tensor-0.1)
+                elif self.loss == "least_square":
+                    l_gan_g = 0.5 * torch.mean((self.D_F(f_AB_g) - 0.6)**2)
+                    l_gan_s = 0.5 * torch.mean((self.D_F(f_AB_s) - 0.4)**2)
+                else:
+                    raise Exception("[!] Unkown loss type: {}".format(self.loss))
+
+                l_encoder = l_gan_s + l_gan_g
+
+                l_encoder.backward()
+                optimizer_Encoder.step()
+
+            # update D_AB network
+            for d_step in range(10):
+                try:
+                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
+                except StopIteration:
+                    A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
+                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
+                if x_A_1.size(0) != x_B_1.size(0):
+                    print("[!] Sampled dataset from A and B have different # of data. Try resampling...")
+                    continue
+
+                x_A_t2a = x_A_1.numpy()
+                x_A_t2a, x_B_t2a = img_random_dis(x_A_t2a)
+
+                x_A = torch.from_numpy(x_A_t2a)
+                x_B = torch.from_numpy(x_B_t2a)
+                x_A = x_A.float()
+                x_B = x_B.float()
+                x_A, x_B = self._get_variable(x_A), self._get_variable(x_B)
+
+                batch_size = x_A.size(0)
+                real_tensor.data.resize_(batch_size).fill_(real_label)
+                fake_tensor.data.resize_(batch_size).fill_(fake_label)
+
                 self.D_AB.zero_grad()
 
                 f_AB = self.E_AB(x_A)
@@ -273,37 +317,28 @@ class Trainer(object):
                 f_AB_s = f_AB[:, 512:1024, :, :]
 
                 x_H = self.D_AB(f_AB_g)
-                l_const_AB = d(x_H, x_B)
+                l_const_H = d(x_H, x_B)
 
-                x_L = self.D_AB(f_AB_g+f_AB_s)
-                l_const_AA = d(x_L, x_A)
+                x_L = self.D_AB(f_AB_g + f_AB_s)
+                l_const_L = d(x_L, x_A)
                 psnr_H = self.psnr(x_B, x_H)
                 psnr_L = self.psnr(x_B, x_L)
 
-                if self.loss == "log_prob":
-                    l_gan_A = bce(self.D_F(x_L), rlfk_tensor+0.1)
-                    l_gan_B = bce(self.D_F(x_H), rlfk_tensor-0.1)
-                elif self.loss == "least_square":
-                    l_gan_A = 0.5 * torch.mean((self.D_F(x_L) - 0.6)**2)
-                    l_gan_B = 0.5 * torch.mean((self.D_F(x_H) - 0.4)**2)
-                else:
-                    raise Exception("[!] Unkown loss type: {}".format(self.loss))
+                l_decoder = l_const_H + l_const_L
 
-                l_gf = 1000*l_const_AB + 1000*l_const_AA + l_gan_A + l_gan_B
-
-                l_gf.backward()
-                optimizer_g.step()
+                l_decoder.backward()
+                optimizer_Decoder.step()
 
             if step % self.log_step == 0:
-                print("[{}/{}] l_df: {:.4f} l_df_real: {:.4f} l_df_fake: {:.4f}". \
-                      format(step, self.max_step, l_df.data[0], l_df_B_real.data[0], l_df_B_fake.data[0]))
+                print("[{}/{}] l_discrimimator: {:.4f} l_df_real: {:.4f} l_df_fake: {:.4f}". \
+                      format(step, self.max_step, l_disciminator.data[0], l_df_B_real.data[0], l_df_B_fake.data[0]))
 
-                print("[{}/{}] l_gf: {:.4f} l_const_AB: {:.4f}, l_const_AA: {:.4f}". \
-                      format(step, self.max_step, l_gf.data[0], l_const_AB.data[0],
-                             l_const_AA.data[0] ))
+                print("[{}/{}] l_encoder: {:.4f} l_gan_g: {:.4f}, l_gan_s: {:.4f}". \
+                      format(step, self.max_step, l_encoder.data[0], l_gan_g.data[0],
+                             l_gan_s.data[0]))
 
-                print("[{}/{}] l_gan_A: {:.4f} l_gan_B: {:.4f}". \
-                      format(step, self.max_step, l_gan_A.data[0], l_gan_B.data[0]))
+                print("[{}/{}] l_decoder: {:.4f} l_const_H: {:.4f} l_const_L: {:.4f}". \
+                      format(step, self.max_step, l_decoder.data[0], l_const_H.data[0], l_const_L.data[0]))
 
                 print("[{}/{}] psnr_H: {:.4f} psnr_L: {:.4f}".format(step, self.max_step, psnr_H.data[0], psnr_L.data[0]))
 
