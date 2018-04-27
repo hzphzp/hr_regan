@@ -1,0 +1,22 @@
+Time is date
+Directory is /data1/huangzp/hr_regan
+This job runs on following nodes:
+Gpu111
+Gpu111-gpu15
+Gpu111-gpu14
+Gpu111-gpu13
+Gpu111-gpu12
+Gpu111-gpu11
+Gpu111-gpu10
+Gpu111-gpu9
+Gpu111-gpu8
+logs
+data
+logs/img_align_celeba_2018-04-27_12-09-02
+result/hr_regan_o500const1000
+[*] MODEL dir: logs/img_align_celeba_2018-04-27_12-09-02
+[*] PARAM path: logs/img_align_celeba_2018-04-27_12-09-02/params.json
+[*] pic dir: result/hr_regan_o500const1000
+[0/500000] l_df: 1.3880 l_df_real: 0.6858 l_df_fake: 0.7022
+[0/500000] l_gf: 51.5181 l_const_AB: 0.0348, l_const_AA: 0.0154
+[0/500000] l_gan_A: 0.6924 l_gan_B: 0.6947

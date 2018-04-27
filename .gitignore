@@ -11,6 +11,7 @@ outputs
 # Log
 logs
 .idea
+.idea/
 
 # ETC
 paper.pdf

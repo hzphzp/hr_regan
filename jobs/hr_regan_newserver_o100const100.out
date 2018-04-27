@@ -1,0 +1,23 @@
+Time is date
+Directory is /gdata/huangzp/hr_regan
+This job runs on following nodes:
+G117
+G117-gpu7
+G117-gpu6
+/gdata/huangzp/hr_regan/logs
+/gdata/huangzp/hr_regan/data
+/gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-26_16-58-39
+/gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100
+Time is date
+Directory is /gdata/huangzp/hr_regan
+This job runs on following nodes:
+G115
+G115-gpu5
+G115-gpu4
+/gdata/huangzp/hr_regan/logs
+/gdata/huangzp/hr_regan/data
+/gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_03-56-02
+/gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_03-56-03
+[*] MODEL dir: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_03-56-02
+[*] PARAM path: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_03-56-02/params.json
+[*] pic dir: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_03-56-03
