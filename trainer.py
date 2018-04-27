@@ -102,7 +102,7 @@ class Trainer(object):
             self.D_F = DiscriminatorCNN(
                     a_channel, 1, conv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
-                    conv_dims[-1]/2, b_channel, deconv_dims, self.num_gpu)
+                    int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
                     a_channel, conv_dims, self.num_gpu)
 
@@ -304,6 +304,8 @@ class Trainer(object):
 
                 print("[{}/{}] l_gan_A: {:.4f} l_gan_B: {:.4f}". \
                       format(step, self.max_step, l_gan_A.data[0], l_gan_B.data[0]))
+
+                print("[{}/{}] psnr_H: {:.4f} psnr_L: {:.4f}".format(step, self.max_step, psnr_H, psnr_L))
 
                 self.generate_with_A(valid_x_A, self.pic_dir, idx=step)
                 # self.generate_with_B(valid_x_B, self.model_dir, idx=step)
