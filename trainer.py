@@ -102,7 +102,7 @@ class Trainer(object):
             self.D_F = DiscriminatorCNN(
                     a_channel, 1, conv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
-                    conv_dims[-1]/2, b_channel, deconv_dims, self.num_gpu)
+                    int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
                     a_channel, conv_dims, self.num_gpu)
 
@@ -242,7 +242,7 @@ class Trainer(object):
             optimizer_d.step()
 
             # update E_AB and D_AB network
-            for g_step in range(50):
+            for g_step in range(500):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -289,7 +289,7 @@ class Trainer(object):
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
-                l_gf = 10*l_const_AB + 10*l_const_AA + l_gan_A + l_gan_B
+                l_gf = 1000*l_const_AB + 1000*l_const_AA + l_gan_A + l_gan_B
 
                 l_gf.backward()
                 optimizer_g.step()
@@ -304,6 +304,8 @@ class Trainer(object):
 
                 print("[{}/{}] l_gan_A: {:.4f} l_gan_B: {:.4f}". \
                       format(step, self.max_step, l_gan_A.data[0], l_gan_B.data[0]))
+
+                print("[{}/{}] psnr_H: {:.4f} psnr_L: {:.4f}".format(step, self.max_step, psnr_H.data[0], psnr_L.data[0]))
 
                 self.generate_with_A(valid_x_A, self.pic_dir, idx=step)
                 # self.generate_with_B(valid_x_B, self.model_dir, idx=step)
