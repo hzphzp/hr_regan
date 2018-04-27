@@ -12,11 +12,18 @@ Gpu111-gpu9
 Gpu111-gpu8
 logs
 data
-logs/img_align_celeba_2018-04-27_12-09-02
-result/hr_regan_o500const1000
-[*] MODEL dir: logs/img_align_celeba_2018-04-27_12-09-02
-[*] PARAM path: logs/img_align_celeba_2018-04-27_12-09-02/params.json
-[*] pic dir: result/hr_regan_o500const1000
-[0/500000] l_df: 1.3880 l_df_real: 0.6858 l_df_fake: 0.7022
-[0/500000] l_gf: 51.5181 l_const_AB: 0.0348, l_const_AA: 0.0154
-[0/500000] l_gan_A: 0.6924 l_gan_B: 0.6947
+logs/img_align_celeba_2018-04-27_12-27-02
+result/hr_regan_o500const1000_2018-04-27_12-27-02
+[*] MODEL dir: logs/img_align_celeba_2018-04-27_12-27-02
+[*] PARAM path: logs/img_align_celeba_2018-04-27_12-27-02/params.json
+[*] pic dir: result/hr_regan_o500const1000_2018-04-27_12-27-02
+[0/500000] l_df: 1.3881 l_df_real: 0.6860 l_df_fake: 0.7021
+[0/500000] l_gf: 58.1941 l_const_AB: 0.0392, l_const_AA: 0.0176
+[0/500000] l_gan_A: 0.6922 l_gan_B: 0.6947
+[0/500000] psnr_H: 20.2824 psnr_L: 17.4923
+[*] Samples saved: result/hr_regan_o500const1000_2018-04-27_12-27-02/0_x_H.png
+[*] Samples saved: result/hr_regan_o500const1000_2018-04-27_12-27-02/0_x_S.png
+[*] Samples saved: result/hr_regan_o500const1000_2018-04-27_12-27-02/0_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
