@@ -100,7 +100,7 @@ class Trainer(object):
                 raise Exception("[!] cnn_type {} is not defined".format(self.cnn_type))
 
             self.D_F = DiscriminatorCNN(
-                    a_channel, 1, deconv_dims, self.num_gpu)
+                    int(conv_dims[-1]/2), 1, conv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
                     int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
@@ -193,7 +193,8 @@ class Trainer(object):
         valid_x_A=valid_x_A.float()
         valid_x_B=valid_x_B.float()
         valid_x_A, valid_x_B = self._get_variable(valid_x_A), self._get_variable(valid_x_B)
-
+        print(valid_x_A.size())
+        self.D_F(valid_x_A)
         vutils.save_image(valid_x_A.data, '{}/valid_x_A.png'.format(self.pic_dir))
         vutils.save_image(valid_x_B.data, '{}/valid_x_B.png'.format(self.pic_dir))
 

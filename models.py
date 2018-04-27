@@ -180,7 +180,7 @@ class DiscriminatorCNN(nn.Module):
         self.layers = []
 
         prev_dim = hidden_dims[0]
-        self.layers.append(nn.Conv2d(input_channel, prev_dim, 4, 2, 1, bias=False))
+        self.layers.append(nn.Conv2d(input_channel, prev_dim, 4, 2, 1, bias=True))
         self.layers.append(nn.LeakyReLU(0.2, inplace=True))
 
         for out_dim in hidden_dims[1:]:
@@ -188,6 +188,7 @@ class DiscriminatorCNN(nn.Module):
             self.layers.append(nn.BatchNorm2d(out_dim))
             self.layers.append(nn.LeakyReLU(0.2, inplace=True))
             prev_dim = out_dim
+            print(out_dim)
         #self.layers.append(nn.Conv2d(prev_dim, output_channel, 4, 1, 0, bias=False))
         #self.layers.append(nn.Linear(512*4*4, 1024))
         #self.layers.append(nn.ReLU(True))
@@ -198,9 +199,12 @@ class DiscriminatorCNN(nn.Module):
 
     def main(self, x):
         out = x
+        print(x.size())
         for index in range(len(self.layer_module)-2):
+            print(index)
             layer = self.layer_module[index]
             out = layer(out)
+            print(out.size())
         
         out=out.view(out.size(0), out.size(1),-1)
         #print(out.size())
