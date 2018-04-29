@@ -1,6 +1,6 @@
 #PBS    -N hr_regan
-#PBS    -o jobs/hr_regan_o500const1000.out 
-#PBS    -e jobs/hr_regan_o500const1000.err
+#PBS    -o jobs/hr_regan_o100o10.out 
+#PBS    -e jobs/hr_regan_o100o10.err
 #PBS    -l nodes=1:gpus=8:E
 #PBS    -r y
 cd $PBS_O_WORKDIR
@@ -9,4 +9,4 @@ echo Directory is $PWD
 echo This job runs on following nodes:
 cat $PBS_NODEFILE
 cat $PBS_GPUFILE
-python2 main.py --dataset=img_align_celeba --num_gpu=8 --log_step=40 --save_step=40 --experiment_name=hr_regan_o500const1000
+python2 main.py --dataset=img_align_celeba --num_gpu=8 --log_step=40 --save_step=40 --experiment_name=hr_regan_o100o10

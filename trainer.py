@@ -100,7 +100,7 @@ class Trainer(object):
                 raise Exception("[!] cnn_type {} is not defined".format(self.cnn_type))
 
             self.D_F = DiscriminatorCNN(
-                    a_channel, 1, conv_dims, self.num_gpu)
+                    int(conv_dims[-1]/2), 1, conv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
                     int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
@@ -226,10 +226,8 @@ class Trainer(object):
 
             f_AB = self.E_AB(x_A)
             f_AB_g = f_AB[:, 0:512, :, :]
-            print(f_AB_g.size())
             f_AB_s = f_AB[:, 512:1024, :, :]
             f_AB_g = f_AB_g.detach()
-            print(f_AB_g.size())
             f_AB_s = f_AB_s.detach()
 
             if self.loss == "log_prob":
@@ -247,7 +245,7 @@ class Trainer(object):
             optimizer_Discriminator.step()
 
             # update E_AB network
-            for e_step in range(2):
+            for e_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -291,7 +289,7 @@ class Trainer(object):
                 optimizer_Encoder.step()
 
             # update D_AB network
-            for d_step in range(2):
+            for d_step in range(10):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -389,7 +387,6 @@ class Trainer(object):
 
         f_AB_g0 = torch.Tensor(f_AB.size()[0], 511, f_AB.size()[2], f_AB.size()[3]).uniform_(0,
                                                                                              1)  # torch.zeros([f_AB.size()[0],511,f_AB.size()[2],f_AB.size()[3]])
-        print(f_AB_g0.size())
         f_AB_g0 = Variable(f_AB_g0)
         f_AB_g = f_AB[:, 0:511, :, :]
 

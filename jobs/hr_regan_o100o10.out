@@ -1,0 +1,65 @@
+Time is date
+Directory is /data1/huangzp/hr_regan
+This job runs on following nodes:
+Gpu111
+Gpu111-gpu15
+Gpu111-gpu14
+Gpu111-gpu13
+Gpu111-gpu12
+Gpu111-gpu11
+Gpu111-gpu10
+Gpu111-gpu9
+Gpu111-gpu8
+logs
+data
+logs/img_align_celeba_2018-04-28_09-26-04
+result/hr_regan_o100o10_2018-04-28_09-26-04
+[*] MODEL dir: logs/img_align_celeba_2018-04-28_09-26-04
+[*] PARAM path: logs/img_align_celeba_2018-04-28_09-26-04/params.json
+[*] pic dir: result/hr_regan_o100o10_2018-04-28_09-26-04
+[0/500000] l_discrimimator: 1.3881 l_df_real: 0.6955 l_df_fake: 0.6927
+[0/500000] l_encoder: 1.3552 l_gan_g: 0.6759, l_gan_s: 0.6794
+[0/500000] l_decoder: 0.3434 l_const_H: 0.1456 l_const_L: 0.1978
+[0/500000] psnr_H: 14.6352 psnr_L: 14.6476
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/0_x_H.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/0_x_S.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/0_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-28_09-26-04...
+[40/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[40/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[40/500000] l_decoder: 0.0382 l_const_H: 0.0248 l_const_L: 0.0134
+[40/500000] psnr_H: 22.2212 psnr_L: 18.4963
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/40_x_H.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/40_x_S.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/40_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-28_09-26-04...
+[80/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[80/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[80/500000] l_decoder: 0.0422 l_const_H: 0.0283 l_const_L: 0.0140
+[80/500000] psnr_H: 21.6999 psnr_L: 17.8830
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/80_x_H.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/80_x_S.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/80_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-28_09-26-04...
+[120/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[120/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[120/500000] l_decoder: 0.0334 l_const_H: 0.0237 l_const_L: 0.0097
+[120/500000] psnr_H: 22.4176 psnr_L: 17.9738
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/120_x_H.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/120_x_S.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/120_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to logs/img_align_celeba_2018-04-28_09-26-04...
+[160/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[160/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[160/500000] l_decoder: 0.0364 l_const_H: 0.0251 l_const_L: 0.0112
+[160/500000] psnr_H: 22.2428 psnr_L: 18.0485
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/160_x_H.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/160_x_S.png
+[*] Samples saved: result/hr_regan_o100o10_2018-04-28_09-26-04/160_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
