@@ -21,3 +21,42 @@ G115-gpu4
 [*] MODEL dir: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_03-56-02
 [*] PARAM path: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_03-56-02/params.json
 [*] pic dir: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_03-56-03
+Time is date
+Directory is /gdata/huangzp/hr_regan
+This job runs on following nodes:
+G115
+G115-gpu5
+G115-gpu4
+/gdata/huangzp/hr_regan/logs
+/gdata/huangzp/hr_regan/data
+/gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_04-00-02
+/gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_04-00-02
+[*] MODEL dir: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_04-00-02
+[*] PARAM path: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_04-00-02/params.json
+[*] pic dir: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_04-00-02
+[0/500000] l_df: 1.4288 l_df_real: 0.7555 l_df_fake: 0.6733
+[0/500000] l_gf: 8.7826 l_const_AB: 0.0299, l_const_AA: 0.0438
+[0/500000] l_gan_A: 0.7416 l_gan_B: 0.6752
+Time is date
+Directory is /gdata/huangzp/hr_regan
+This job runs on following nodes:
+G115
+G115-gpu5
+G115-gpu4
+/gdata/huangzp/hr_regan/logs
+/gdata/huangzp/hr_regan/data
+/gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_04-23-02
+/gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_04-23-02
+[*] MODEL dir: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_04-23-02
+[*] PARAM path: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-27_04-23-02/params.json
+[*] pic dir: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_04-23-02
+[0/500000] l_df: 1.4287 l_df_real: 0.7554 l_df_fake: 0.6733
+[0/500000] l_gf: 45.8516 l_const_AB: 0.0300, l_const_AA: 0.0144
+[0/500000] l_gan_A: 0.7436 l_gan_B: 0.6772
+[0/500000] psnr_H: 21.5262 psnr_L: 18.2037
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_04-23-02/0_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_04-23-02/0_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100const100_2018-04-27_04-23-02/0_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...

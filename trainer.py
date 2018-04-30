@@ -245,7 +245,7 @@ class Trainer(object):
             optimizer_Discriminator.step()
 
             # update E_AB network
-            for e_step in range(100):
+            for e_step in range(500):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -289,7 +289,7 @@ class Trainer(object):
                 optimizer_Encoder.step()
 
             # update D_AB network
-            for d_step in range(10):
+            for d_step in range(300):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -325,7 +325,7 @@ class Trainer(object):
                 x_L = self.D_AB(f_AB_g + f_AB_s)
                 l_const_L = d(x_L, x_A)
                 psnr_H = self.psnr(x_B, x_H)
-                psnr_L = self.psnr(x_B, x_L)
+                psnr_L = self.psnr(x_A, x_L)
 
                 l_decoder = l_const_H + l_const_L
 
