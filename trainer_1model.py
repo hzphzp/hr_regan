@@ -274,12 +274,6 @@ class Trainer(object):
                 f_AB_g = f_AB[:, 0:512, :, :]
                 f_AB_s = f_AB[:, 512:1024, :, :]
 
-                f_AB_H = self.E_AB(x_A)
-                f_AB_g_H = f_AB_H[:, 0:512, :, :]
-                f_AB_s_H = f_AB_H[:, 512:1024, :, :]
-
-                l_const_fg = d(f_AB_g, f_AB_g_H)
-                l_const_fs = d(f_AB_s_H, 0)
                 if self.loss == "log_prob":
                     l_gan_g = bce(self.D_F(f_AB_g), rlfk_tensor+0.1)
                     l_gan_s = bce(self.D_F(f_AB_s), rlfk_tensor-0.1)
@@ -289,7 +283,7 @@ class Trainer(object):
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
-                l_encoder = l_gan_s + l_gan_g + l_const_fg + l_const_fs
+                l_encoder = l_gan_s + l_gan_g
 
                 l_encoder.backward()
                 optimizer_Encoder.step()
@@ -342,9 +336,9 @@ class Trainer(object):
                 print("[{}/{}] l_discrimimator: {:.4f} l_df_real: {:.4f} l_df_fake: {:.4f}". \
                       format(step, self.max_step, l_disciminator.data[0], l_df_B_real.data[0], l_df_B_fake.data[0]))
 
-                print("[{}/{}] l_encoder: {:.4f} l_gan_g: {:.4f}, l_gan_s: {:.4f}, l_const_fg: {:.4f}, l_const_fs: {:.4f}". \
+                print("[{}/{}] l_encoder: {:.4f} l_gan_g: {:.4f}, l_gan_s: {:.4f}". \
                       format(step, self.max_step, l_encoder.data[0], l_gan_g.data[0],
-                             l_gan_s.data[0], l_const_fg.data[0], l_const_fs.data[0]))
+                             l_gan_s.data[0]))
 
                 print("[{}/{}] l_decoder: {:.4f} l_const_H: {:.4f} l_const_L: {:.4f}". \
                       format(step, self.max_step, l_decoder.data[0], l_const_H.data[0], l_const_L.data[0]))
