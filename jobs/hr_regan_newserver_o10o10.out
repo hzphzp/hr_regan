@@ -1,0 +1,1142 @@
+Time is date
+Directory is /gdata/huangzp/hr_regan
+This job runs on following nodes:
+G115
+G115-gpu7
+G115-gpu6
+/gdata/huangzp/hr_regan/logs
+/gdata/huangzp/hr_regan/data
+/gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02
+/gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10
+[*] MODEL dir: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02
+[*] PARAM path: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02/params.json
+[*] pic dir: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10
+[0/500000] l_discrimimator: 1.3890 l_df_real: 0.7023 l_df_fake: 0.6866
+[0/500000] l_encoder: 1.3871 l_gan_g: 0.6947, l_gan_s: 0.6924
+[0/500000] l_decoder: 0.3323 l_const_H: 0.1392 l_const_L: 0.1931
+[0/500000] psnr_H: 14.8700 psnr_L: 13.3235
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/0_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/0_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/0_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[10/500000] l_discrimimator: 1.3631 l_df_real: 0.6809 l_df_fake: 0.6821
+[10/500000] l_encoder: 1.3575 l_gan_g: 0.6786, l_gan_s: 0.6789
+[10/500000] l_decoder: 0.1205 l_const_H: 0.0458 l_const_L: 0.0747
+[10/500000] psnr_H: 19.5614 psnr_L: 17.3235
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/10_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/10_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/10_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[20/500000] l_discrimimator: 1.3505 l_df_real: 0.6749 l_df_fake: 0.6756
+[20/500000] l_encoder: 1.3468 l_gan_g: 0.6734, l_gan_s: 0.6733
+[20/500000] l_decoder: 0.0603 l_const_H: 0.0295 l_const_L: 0.0307
+[20/500000] psnr_H: 21.5016 psnr_L: 21.1837
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/20_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/20_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/20_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[30/500000] l_discrimimator: 1.3463 l_df_real: 0.6731 l_df_fake: 0.6732
+[30/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[30/500000] l_decoder: 0.0591 l_const_H: 0.0360 l_const_L: 0.0231
+[30/500000] psnr_H: 20.5944 psnr_L: 22.5513
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/30_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/30_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/30_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[40/500000] l_discrimimator: 1.3463 l_df_real: 0.6731 l_df_fake: 0.6732
+[40/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[40/500000] l_decoder: 0.0496 l_const_H: 0.0352 l_const_L: 0.0144
+[40/500000] psnr_H: 20.7789 psnr_L: 24.6330
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/40_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/40_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/40_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[50/500000] l_discrimimator: 1.3464 l_df_real: 0.6733 l_df_fake: 0.6731
+[50/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[50/500000] l_decoder: 0.0369 l_const_H: 0.0255 l_const_L: 0.0114
+[50/500000] psnr_H: 22.1048 psnr_L: 25.7999
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/50_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/50_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/50_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[60/500000] l_discrimimator: 1.3463 l_df_real: 0.6731 l_df_fake: 0.6731
+[60/500000] l_encoder: 1.3463 l_gan_g: 0.6731, l_gan_s: 0.6732
+[60/500000] l_decoder: 0.0326 l_const_H: 0.0224 l_const_L: 0.0102
+[60/500000] psnr_H: 22.7102 psnr_L: 26.1276
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/60_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/60_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/60_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[70/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[70/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[70/500000] l_decoder: 0.0326 l_const_H: 0.0215 l_const_L: 0.0111
+[70/500000] psnr_H: 22.7963 psnr_L: 25.9455
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/70_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/70_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/70_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[80/500000] l_discrimimator: 1.3463 l_df_real: 0.6732 l_df_fake: 0.6731
+[80/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[80/500000] l_decoder: 0.0428 l_const_H: 0.0307 l_const_L: 0.0121
+[80/500000] psnr_H: 21.3204 psnr_L: 25.8732
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/80_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/80_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/80_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[90/500000] l_discrimimator: 1.3464 l_df_real: 0.6733 l_df_fake: 0.6731
+[90/500000] l_encoder: 1.3464 l_gan_g: 0.6731, l_gan_s: 0.6733
+[90/500000] l_decoder: 0.0345 l_const_H: 0.0236 l_const_L: 0.0108
+[90/500000] psnr_H: 22.4932 psnr_L: 25.9864
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/90_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/90_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/90_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[100/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6731
+[100/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[100/500000] l_decoder: 0.0448 l_const_H: 0.0345 l_const_L: 0.0103
+[100/500000] psnr_H: 20.8133 psnr_L: 26.3320
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/100_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/100_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/100_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[110/500000] l_discrimimator: 1.3465 l_df_real: 0.6733 l_df_fake: 0.6732
+[110/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[110/500000] l_decoder: 0.0331 l_const_H: 0.0208 l_const_L: 0.0123
+[110/500000] psnr_H: 22.9809 psnr_L: 25.4659
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/110_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/110_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/110_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[120/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6731
+[120/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[120/500000] l_decoder: 0.0349 l_const_H: 0.0271 l_const_L: 0.0078
+[120/500000] psnr_H: 21.8576 psnr_L: 27.6451
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/120_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/120_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/120_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[130/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[130/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[130/500000] l_decoder: 0.0414 l_const_H: 0.0328 l_const_L: 0.0086
+[130/500000] psnr_H: 21.1196 psnr_L: 27.0320
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/130_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/130_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/130_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[140/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[140/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[140/500000] l_decoder: 0.0390 l_const_H: 0.0294 l_const_L: 0.0096
+[140/500000] psnr_H: 21.5558 psnr_L: 26.5786
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/140_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/140_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/140_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[150/500000] l_discrimimator: 1.3462 l_df_real: 0.6732 l_df_fake: 0.6730
+[150/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[150/500000] l_decoder: 0.0337 l_const_H: 0.0257 l_const_L: 0.0080
+[150/500000] psnr_H: 22.0814 psnr_L: 27.5492
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/150_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/150_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/150_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[160/500000] l_discrimimator: 1.3475 l_df_real: 0.6733 l_df_fake: 0.6742
+[160/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6731
+[160/500000] l_decoder: 0.0312 l_const_H: 0.0235 l_const_L: 0.0078
+[160/500000] psnr_H: 22.4870 psnr_L: 27.7231
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/160_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/160_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/160_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[170/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[170/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[170/500000] l_decoder: 0.0398 l_const_H: 0.0306 l_const_L: 0.0092
+[170/500000] psnr_H: 21.3814 psnr_L: 26.8772
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/170_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/170_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/170_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[180/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6731
+[180/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6730
+[180/500000] l_decoder: 0.0351 l_const_H: 0.0273 l_const_L: 0.0079
+[180/500000] psnr_H: 21.9809 psnr_L: 27.4279
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/180_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/180_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/180_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[190/500000] l_discrimimator: 1.3464 l_df_real: 0.6733 l_df_fake: 0.6732
+[190/500000] l_encoder: 1.3463 l_gan_g: 0.6731, l_gan_s: 0.6732
+[190/500000] l_decoder: 0.0407 l_const_H: 0.0322 l_const_L: 0.0085
+[190/500000] psnr_H: 21.1743 psnr_L: 26.9350
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/190_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/190_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/190_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[200/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6731
+[200/500000] l_encoder: 1.3462 l_gan_g: 0.6730, l_gan_s: 0.6731
+[200/500000] l_decoder: 0.0240 l_const_H: 0.0187 l_const_L: 0.0053
+[200/500000] psnr_H: 23.4822 psnr_L: 29.3428
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/200_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/200_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/200_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[210/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[210/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[210/500000] l_decoder: 0.0279 l_const_H: 0.0215 l_const_L: 0.0063
+[210/500000] psnr_H: 22.9264 psnr_L: 28.6381
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/210_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/210_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/210_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[220/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[220/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[220/500000] l_decoder: 0.0430 l_const_H: 0.0354 l_const_L: 0.0076
+[220/500000] psnr_H: 20.7602 psnr_L: 27.5995
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/220_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/220_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/220_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[230/500000] l_discrimimator: 1.3467 l_df_real: 0.6735 l_df_fake: 0.6732
+[230/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[230/500000] l_decoder: 0.0258 l_const_H: 0.0193 l_const_L: 0.0065
+[230/500000] psnr_H: 23.3589 psnr_L: 28.3939
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/230_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/230_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/230_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[240/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[240/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[240/500000] l_decoder: 0.0401 l_const_H: 0.0327 l_const_L: 0.0074
+[240/500000] psnr_H: 21.1180 psnr_L: 27.8159
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/240_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/240_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/240_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[250/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[250/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[250/500000] l_decoder: 0.0327 l_const_H: 0.0249 l_const_L: 0.0078
+[250/500000] psnr_H: 22.2922 psnr_L: 27.5714
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/250_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/250_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/250_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[260/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[260/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6731
+[260/500000] l_decoder: 0.0327 l_const_H: 0.0257 l_const_L: 0.0070
+[260/500000] psnr_H: 22.1623 psnr_L: 28.1553
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/260_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/260_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/260_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[270/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[270/500000] l_encoder: 1.3464 l_gan_g: 0.6734, l_gan_s: 0.6731
+[270/500000] l_decoder: 0.0306 l_const_H: 0.0233 l_const_L: 0.0074
+[270/500000] psnr_H: 22.6778 psnr_L: 28.1840
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/270_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/270_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/270_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[280/500000] l_discrimimator: 1.3466 l_df_real: 0.6731 l_df_fake: 0.6735
+[280/500000] l_encoder: 1.3464 l_gan_g: 0.6731, l_gan_s: 0.6734
+[280/500000] l_decoder: 0.0262 l_const_H: 0.0191 l_const_L: 0.0071
+[280/500000] psnr_H: 23.3651 psnr_L: 28.1027
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/280_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/280_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/280_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[290/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[290/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[290/500000] l_decoder: 0.0261 l_const_H: 0.0194 l_const_L: 0.0067
+[290/500000] psnr_H: 23.4200 psnr_L: 28.2834
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/290_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/290_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/290_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[300/500000] l_discrimimator: 1.3464 l_df_real: 0.6733 l_df_fake: 0.6731
+[300/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[300/500000] l_decoder: 0.0362 l_const_H: 0.0291 l_const_L: 0.0071
+[300/500000] psnr_H: 21.5926 psnr_L: 28.0050
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/300_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/300_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/300_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[310/500000] l_discrimimator: 1.3489 l_df_real: 0.6757 l_df_fake: 0.6731
+[310/500000] l_encoder: 1.3464 l_gan_g: 0.6731, l_gan_s: 0.6733
+[310/500000] l_decoder: 0.0251 l_const_H: 0.0187 l_const_L: 0.0063
+[310/500000] psnr_H: 23.6322 psnr_L: 28.6518
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/310_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/310_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/310_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[320/500000] l_discrimimator: 1.3466 l_df_real: 0.6730 l_df_fake: 0.6735
+[320/500000] l_encoder: 1.3463 l_gan_g: 0.6730, l_gan_s: 0.6732
+[320/500000] l_decoder: 0.0369 l_const_H: 0.0300 l_const_L: 0.0069
+[320/500000] psnr_H: 21.4630 psnr_L: 28.2218
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/320_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/320_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/320_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[330/500000] l_discrimimator: 1.3468 l_df_real: 0.6737 l_df_fake: 0.6732
+[330/500000] l_encoder: 1.3465 l_gan_g: 0.6734, l_gan_s: 0.6731
+[330/500000] l_decoder: 0.0293 l_const_H: 0.0225 l_const_L: 0.0067
+[330/500000] psnr_H: 22.6682 psnr_L: 28.6842
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/330_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/330_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/330_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[340/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[340/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[340/500000] l_decoder: 0.0327 l_const_H: 0.0266 l_const_L: 0.0061
+[340/500000] psnr_H: 22.0223 psnr_L: 28.7941
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/340_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/340_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/340_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[350/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[350/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[350/500000] l_decoder: 0.0248 l_const_H: 0.0190 l_const_L: 0.0058
+[350/500000] psnr_H: 23.4050 psnr_L: 28.9651
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/350_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/350_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/350_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[360/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[360/500000] l_encoder: 1.3466 l_gan_g: 0.6733, l_gan_s: 0.6733
+[360/500000] l_decoder: 0.0250 l_const_H: 0.0186 l_const_L: 0.0064
+[360/500000] psnr_H: 23.6029 psnr_L: 28.8124
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/360_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/360_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/360_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[370/500000] l_discrimimator: 1.3463 l_df_real: 0.6732 l_df_fake: 0.6731
+[370/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[370/500000] l_decoder: 0.0326 l_const_H: 0.0257 l_const_L: 0.0069
+[370/500000] psnr_H: 22.0222 psnr_L: 28.3429
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/370_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/370_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/370_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[380/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6732
+[380/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[380/500000] l_decoder: 0.0361 l_const_H: 0.0294 l_const_L: 0.0067
+[380/500000] psnr_H: 21.6007 psnr_L: 28.2656
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/380_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/380_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/380_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[390/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[390/500000] l_encoder: 1.3464 l_gan_g: 0.6732, l_gan_s: 0.6731
+[390/500000] l_decoder: 0.0283 l_const_H: 0.0214 l_const_L: 0.0069
+[390/500000] psnr_H: 22.8380 psnr_L: 28.3766
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/390_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/390_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/390_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[400/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[400/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[400/500000] l_decoder: 0.0314 l_const_H: 0.0251 l_const_L: 0.0063
+[400/500000] psnr_H: 22.1647 psnr_L: 28.9761
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/400_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/400_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/400_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[410/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[410/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[410/500000] l_decoder: 0.0280 l_const_H: 0.0228 l_const_L: 0.0052
+[410/500000] psnr_H: 22.7038 psnr_L: 29.3723
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/410_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/410_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/410_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[420/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[420/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[420/500000] l_decoder: 0.0253 l_const_H: 0.0196 l_const_L: 0.0057
+[420/500000] psnr_H: 23.1890 psnr_L: 28.7951
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/420_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/420_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/420_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[430/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[430/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[430/500000] l_decoder: 0.0221 l_const_H: 0.0158 l_const_L: 0.0062
+[430/500000] psnr_H: 24.1851 psnr_L: 28.7843
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/430_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/430_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/430_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[440/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[440/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[440/500000] l_decoder: 0.0295 l_const_H: 0.0225 l_const_L: 0.0069
+[440/500000] psnr_H: 22.7978 psnr_L: 28.6295
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/440_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/440_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/440_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[450/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[450/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[450/500000] l_decoder: 0.0315 l_const_H: 0.0269 l_const_L: 0.0046
+[450/500000] psnr_H: 22.0538 psnr_L: 30.0164
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/450_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/450_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/450_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[460/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[460/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[460/500000] l_decoder: 0.0256 l_const_H: 0.0196 l_const_L: 0.0060
+[460/500000] psnr_H: 23.5034 psnr_L: 29.0633
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/460_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/460_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/460_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[470/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[470/500000] l_encoder: 1.3462 l_gan_g: 0.6730, l_gan_s: 0.6731
+[470/500000] l_decoder: 0.0305 l_const_H: 0.0247 l_const_L: 0.0058
+[470/500000] psnr_H: 22.3034 psnr_L: 29.0841
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/470_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/470_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/470_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[480/500000] l_discrimimator: 1.3463 l_df_real: 0.6730 l_df_fake: 0.6733
+[480/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[480/500000] l_decoder: 0.0298 l_const_H: 0.0240 l_const_L: 0.0058
+[480/500000] psnr_H: 22.4260 psnr_L: 29.0610
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/480_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/480_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/480_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[490/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[490/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[490/500000] l_decoder: 0.0344 l_const_H: 0.0291 l_const_L: 0.0053
+[490/500000] psnr_H: 21.5561 psnr_L: 29.3260
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/490_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/490_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/490_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[500/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[500/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[500/500000] l_decoder: 0.0298 l_const_H: 0.0247 l_const_L: 0.0051
+[500/500000] psnr_H: 22.2717 psnr_L: 29.4989
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/500_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/500_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/500_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[510/500000] l_discrimimator: 1.3462 l_df_real: 0.6730 l_df_fake: 0.6732
+[510/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[510/500000] l_decoder: 0.0309 l_const_H: 0.0235 l_const_L: 0.0074
+[510/500000] psnr_H: 22.6230 psnr_L: 27.9047
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/510_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/510_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/510_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[520/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[520/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[520/500000] l_decoder: 0.0304 l_const_H: 0.0242 l_const_L: 0.0062
+[520/500000] psnr_H: 22.3690 psnr_L: 28.9926
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/520_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/520_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/520_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[530/500000] l_discrimimator: 1.3777 l_df_real: 0.6926 l_df_fake: 0.6851
+[530/500000] l_encoder: 1.3745 l_gan_g: 0.6875, l_gan_s: 0.6870
+[530/500000] l_decoder: 0.0798 l_const_H: 0.0534 l_const_L: 0.0264
+[530/500000] psnr_H: 18.9470 psnr_L: 21.9709
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/530_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/530_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/530_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[540/500000] l_discrimimator: 1.3509 l_df_real: 0.6765 l_df_fake: 0.6743
+[540/500000] l_encoder: 1.3536 l_gan_g: 0.6786, l_gan_s: 0.6751
+[540/500000] l_decoder: 0.0500 l_const_H: 0.0335 l_const_L: 0.0165
+[540/500000] psnr_H: 20.8844 psnr_L: 24.1085
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/540_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/540_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/540_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[550/500000] l_discrimimator: 1.3467 l_df_real: 0.6733 l_df_fake: 0.6733
+[550/500000] l_encoder: 1.3464 l_gan_g: 0.6732, l_gan_s: 0.6732
+[550/500000] l_decoder: 0.0564 l_const_H: 0.0403 l_const_L: 0.0160
+[550/500000] psnr_H: 20.1710 psnr_L: 24.3847
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/550_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/550_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/550_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[560/500000] l_discrimimator: 1.3463 l_df_real: 0.6732 l_df_fake: 0.6731
+[560/500000] l_encoder: 1.3463 l_gan_g: 0.6732, l_gan_s: 0.6731
+[560/500000] l_decoder: 0.0293 l_const_H: 0.0223 l_const_L: 0.0070
+[560/500000] psnr_H: 22.6323 psnr_L: 28.1074
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/560_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/560_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/560_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[570/500000] l_discrimimator: 1.3465 l_df_real: 0.6732 l_df_fake: 0.6733
+[570/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6732
+[570/500000] l_decoder: 0.0292 l_const_H: 0.0219 l_const_L: 0.0074
+[570/500000] psnr_H: 22.8163 psnr_L: 28.0223
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/570_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/570_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/570_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[580/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6731
+[580/500000] l_encoder: 1.3464 l_gan_g: 0.6732, l_gan_s: 0.6732
+[580/500000] l_decoder: 0.0357 l_const_H: 0.0285 l_const_L: 0.0072
+[580/500000] psnr_H: 21.7683 psnr_L: 27.9430
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/580_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/580_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/580_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[590/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[590/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6731
+[590/500000] l_decoder: 0.0322 l_const_H: 0.0261 l_const_L: 0.0060
+[590/500000] psnr_H: 22.0451 psnr_L: 28.7135
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/590_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/590_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/590_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[600/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6731
+[600/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[600/500000] l_decoder: 0.0430 l_const_H: 0.0336 l_const_L: 0.0094
+[600/500000] psnr_H: 20.8814 psnr_L: 26.9304
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/600_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/600_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/600_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[610/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6731
+[610/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[610/500000] l_decoder: 0.0330 l_const_H: 0.0269 l_const_L: 0.0061
+[610/500000] psnr_H: 21.8913 psnr_L: 28.6999
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/610_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/610_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/610_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[620/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6731
+[620/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6731
+[620/500000] l_decoder: 0.0277 l_const_H: 0.0208 l_const_L: 0.0069
+[620/500000] psnr_H: 22.9880 psnr_L: 28.1798
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/620_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/620_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/620_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[630/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6730
+[630/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6731
+[630/500000] l_decoder: 0.0401 l_const_H: 0.0324 l_const_L: 0.0076
+[630/500000] psnr_H: 21.1264 psnr_L: 27.6916
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/630_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/630_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/630_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[640/500000] l_discrimimator: 1.3463 l_df_real: 0.6731 l_df_fake: 0.6731
+[640/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[640/500000] l_decoder: 0.0287 l_const_H: 0.0231 l_const_L: 0.0056
+[640/500000] psnr_H: 22.5441 psnr_L: 29.0215
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/640_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/640_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/640_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[650/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[650/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[650/500000] l_decoder: 0.0278 l_const_H: 0.0204 l_const_L: 0.0074
+[650/500000] psnr_H: 23.0671 psnr_L: 28.2802
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/650_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/650_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/650_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[660/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6731
+[660/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[660/500000] l_decoder: 0.0275 l_const_H: 0.0216 l_const_L: 0.0059
+[660/500000] psnr_H: 22.9701 psnr_L: 29.2051
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/660_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/660_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/660_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[670/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[670/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[670/500000] l_decoder: 0.0294 l_const_H: 0.0228 l_const_L: 0.0065
+[670/500000] psnr_H: 22.6314 psnr_L: 28.4884
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/670_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/670_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/670_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[680/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[680/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[680/500000] l_decoder: 0.0260 l_const_H: 0.0182 l_const_L: 0.0078
+[680/500000] psnr_H: 23.5447 psnr_L: 27.8237
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/680_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/680_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/680_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[690/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[690/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[690/500000] l_decoder: 0.0324 l_const_H: 0.0265 l_const_L: 0.0059
+[690/500000] psnr_H: 22.0373 psnr_L: 28.9397
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/690_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/690_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/690_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[700/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[700/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[700/500000] l_decoder: 0.0296 l_const_H: 0.0242 l_const_L: 0.0055
+[700/500000] psnr_H: 22.4079 psnr_L: 29.3783
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/700_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/700_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/700_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[710/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[710/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[710/500000] l_decoder: 0.0266 l_const_H: 0.0196 l_const_L: 0.0071
+[710/500000] psnr_H: 23.2949 psnr_L: 28.2801
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/710_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/710_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/710_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[720/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[720/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[720/500000] l_decoder: 0.0227 l_const_H: 0.0177 l_const_L: 0.0050
+[720/500000] psnr_H: 23.7878 psnr_L: 29.7864
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/720_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/720_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/720_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[730/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[730/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[730/500000] l_decoder: 0.0298 l_const_H: 0.0233 l_const_L: 0.0065
+[730/500000] psnr_H: 22.5833 psnr_L: 28.4380
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/730_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/730_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/730_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[740/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6731
+[740/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[740/500000] l_decoder: 0.0322 l_const_H: 0.0263 l_const_L: 0.0059
+[740/500000] psnr_H: 21.9844 psnr_L: 28.9358
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/740_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/740_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/740_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[750/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6731
+[750/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[750/500000] l_decoder: 0.0370 l_const_H: 0.0296 l_const_L: 0.0074
+[750/500000] psnr_H: 21.4013 psnr_L: 28.0776
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/750_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/750_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/750_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[760/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[760/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[760/500000] l_decoder: 0.0330 l_const_H: 0.0269 l_const_L: 0.0060
+[760/500000] psnr_H: 21.9241 psnr_L: 28.9611
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/760_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/760_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/760_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[770/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[770/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[770/500000] l_decoder: 0.0231 l_const_H: 0.0188 l_const_L: 0.0043
+[770/500000] psnr_H: 23.4611 psnr_L: 30.2842
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/770_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/770_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/770_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[780/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[780/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[780/500000] l_decoder: 0.0397 l_const_H: 0.0311 l_const_L: 0.0087
+[780/500000] psnr_H: 21.3427 psnr_L: 27.5393
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/780_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/780_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/780_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[790/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[790/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[790/500000] l_decoder: 0.0236 l_const_H: 0.0177 l_const_L: 0.0059
+[790/500000] psnr_H: 23.7054 psnr_L: 28.9810
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/790_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/790_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/790_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[800/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[800/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[800/500000] l_decoder: 0.0366 l_const_H: 0.0310 l_const_L: 0.0056
+[800/500000] psnr_H: 21.3640 psnr_L: 29.5326
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/800_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/800_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/800_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[810/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[810/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[810/500000] l_decoder: 0.0350 l_const_H: 0.0280 l_const_L: 0.0070
+[810/500000] psnr_H: 21.9196 psnr_L: 28.1828
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/810_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/810_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/810_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[820/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[820/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[820/500000] l_decoder: 0.0267 l_const_H: 0.0217 l_const_L: 0.0050
+[820/500000] psnr_H: 22.8574 psnr_L: 29.7905
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/820_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/820_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/820_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[830/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[830/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[830/500000] l_decoder: 0.0242 l_const_H: 0.0184 l_const_L: 0.0058
+[830/500000] psnr_H: 23.5293 psnr_L: 29.6627
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/830_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/830_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/830_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[840/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[840/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[840/500000] l_decoder: 0.0228 l_const_H: 0.0175 l_const_L: 0.0052
+[840/500000] psnr_H: 23.7731 psnr_L: 29.7156
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/840_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/840_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/840_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[850/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[850/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[850/500000] l_decoder: 0.0339 l_const_H: 0.0285 l_const_L: 0.0054
+[850/500000] psnr_H: 21.7150 psnr_L: 29.2359
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/850_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/850_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/850_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[860/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[860/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[860/500000] l_decoder: 0.0310 l_const_H: 0.0235 l_const_L: 0.0075
+[860/500000] psnr_H: 22.6159 psnr_L: 28.2886
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/860_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/860_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/860_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[870/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[870/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[870/500000] l_decoder: 0.0315 l_const_H: 0.0267 l_const_L: 0.0049
+[870/500000] psnr_H: 22.0019 psnr_L: 29.6221
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/870_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/870_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/870_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[880/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[880/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[880/500000] l_decoder: 0.0292 l_const_H: 0.0228 l_const_L: 0.0065
+[880/500000] psnr_H: 22.6275 psnr_L: 28.9701
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/880_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/880_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/880_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[890/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[890/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[890/500000] l_decoder: 0.0336 l_const_H: 0.0288 l_const_L: 0.0049
+[890/500000] psnr_H: 21.6303 psnr_L: 29.8751
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/890_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/890_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/890_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[900/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[900/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[900/500000] l_decoder: 0.0259 l_const_H: 0.0194 l_const_L: 0.0065
+[900/500000] psnr_H: 23.4276 psnr_L: 28.7778
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/900_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/900_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/900_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[910/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[910/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[910/500000] l_decoder: 0.0235 l_const_H: 0.0186 l_const_L: 0.0049
+[910/500000] psnr_H: 23.6645 psnr_L: 29.9102
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/910_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/910_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/910_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[920/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[920/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[920/500000] l_decoder: 0.0258 l_const_H: 0.0201 l_const_L: 0.0056
+[920/500000] psnr_H: 23.3316 psnr_L: 29.1287
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/920_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/920_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/920_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[930/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[930/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[930/500000] l_decoder: 0.0318 l_const_H: 0.0262 l_const_L: 0.0057
+[930/500000] psnr_H: 22.1019 psnr_L: 29.4098
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/930_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/930_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/930_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[940/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[940/500000] l_encoder: 1.3462 l_gan_g: 0.6732, l_gan_s: 0.6730
+[940/500000] l_decoder: 0.0245 l_const_H: 0.0194 l_const_L: 0.0051
+[940/500000] psnr_H: 23.4528 psnr_L: 29.6634
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/940_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/940_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/940_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[950/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[950/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[950/500000] l_decoder: 0.0227 l_const_H: 0.0171 l_const_L: 0.0056
+[950/500000] psnr_H: 23.8788 psnr_L: 29.2471
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/950_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/950_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/950_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[960/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[960/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[960/500000] l_decoder: 0.0255 l_const_H: 0.0201 l_const_L: 0.0054
+[960/500000] psnr_H: 23.3251 psnr_L: 29.3886
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/960_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/960_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/960_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[970/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[970/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[970/500000] l_decoder: 0.0318 l_const_H: 0.0260 l_const_L: 0.0059
+[970/500000] psnr_H: 22.1339 psnr_L: 29.2382
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/970_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/970_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/970_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[980/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[980/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[980/500000] l_decoder: 0.0342 l_const_H: 0.0288 l_const_L: 0.0054
+[980/500000] psnr_H: 21.6307 psnr_L: 29.1538
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/980_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/980_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/980_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[990/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[990/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[990/500000] l_decoder: 0.0348 l_const_H: 0.0296 l_const_L: 0.0052
+[990/500000] psnr_H: 21.6340 psnr_L: 29.4504
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/990_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/990_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/990_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1000/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1000/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1000/500000] l_decoder: 0.0226 l_const_H: 0.0165 l_const_L: 0.0061
+[1000/500000] psnr_H: 24.0374 psnr_L: 28.8245
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1000_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1000_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1000_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1010/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1010/500000] l_encoder: 1.3462 l_gan_g: 0.6731, l_gan_s: 0.6731
+[1010/500000] l_decoder: 0.0351 l_const_H: 0.0303 l_const_L: 0.0048
+[1010/500000] psnr_H: 21.4966 psnr_L: 29.9025
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1010_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1010_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1010_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1020/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1020/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[1020/500000] l_decoder: 0.0227 l_const_H: 0.0182 l_const_L: 0.0045
+[1020/500000] psnr_H: 23.6184 psnr_L: 30.3212
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1020_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1020_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1020_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1030/500000] l_discrimimator: 1.3462 l_df_real: 0.6730 l_df_fake: 0.6732
+[1030/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[1030/500000] l_decoder: 0.0257 l_const_H: 0.0201 l_const_L: 0.0056
+[1030/500000] psnr_H: 23.2337 psnr_L: 29.3762
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1030_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1030_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1030_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1040/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1040/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1040/500000] l_decoder: 0.0317 l_const_H: 0.0272 l_const_L: 0.0046
+[1040/500000] psnr_H: 21.9496 psnr_L: 30.1841
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1040_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1040_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1040_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1050/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1050/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1050/500000] l_decoder: 0.0373 l_const_H: 0.0319 l_const_L: 0.0054
+[1050/500000] psnr_H: 21.2282 psnr_L: 29.3768
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1050_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1050_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1050_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1060/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1060/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1060/500000] l_decoder: 0.0252 l_const_H: 0.0206 l_const_L: 0.0046
+[1060/500000] psnr_H: 23.2613 psnr_L: 30.2439
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1060_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1060_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1060_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1070/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1070/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1070/500000] l_decoder: 0.0250 l_const_H: 0.0202 l_const_L: 0.0048
+[1070/500000] psnr_H: 23.2592 psnr_L: 30.2687
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1070_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1070_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1070_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1080/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1080/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1080/500000] l_decoder: 0.0237 l_const_H: 0.0193 l_const_L: 0.0045
+[1080/500000] psnr_H: 23.4499 psnr_L: 30.3223
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1080_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1080_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1080_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1090/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1090/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1090/500000] l_decoder: 0.0291 l_const_H: 0.0234 l_const_L: 0.0057
+[1090/500000] psnr_H: 22.7852 psnr_L: 29.3988
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1090_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1090_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1090_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1100/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1100/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1100/500000] l_decoder: 0.0210 l_const_H: 0.0159 l_const_L: 0.0052
+[1100/500000] psnr_H: 24.1400 psnr_L: 30.1372
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1100_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1100_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1100_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1110/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1110/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1110/500000] l_decoder: 0.0227 l_const_H: 0.0173 l_const_L: 0.0053
+[1110/500000] psnr_H: 23.8510 psnr_L: 29.8928
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1110_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1110_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1110_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1120/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1120/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1120/500000] l_decoder: 0.0272 l_const_H: 0.0225 l_const_L: 0.0047
+[1120/500000] psnr_H: 23.0489 psnr_L: 30.7256
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1120_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1120_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1120_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1130/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1130/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1130/500000] l_decoder: 0.0322 l_const_H: 0.0269 l_const_L: 0.0053
+[1130/500000] psnr_H: 22.0488 psnr_L: 29.6023
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1130_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1130_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1130_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1140/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1140/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1140/500000] l_decoder: 0.0225 l_const_H: 0.0171 l_const_L: 0.0054
+[1140/500000] psnr_H: 23.8859 psnr_L: 29.4731
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1140_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1140_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1140_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1150/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1150/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1150/500000] l_decoder: 0.0247 l_const_H: 0.0208 l_const_L: 0.0039
+[1150/500000] psnr_H: 22.9507 psnr_L: 30.7624
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1150_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1150_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1150_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1160/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1160/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1160/500000] l_decoder: 0.0372 l_const_H: 0.0317 l_const_L: 0.0056
+[1160/500000] psnr_H: 21.3488 psnr_L: 29.4974
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1160_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1160_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1160_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1170/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1170/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1170/500000] l_decoder: 0.0203 l_const_H: 0.0160 l_const_L: 0.0042
+[1170/500000] psnr_H: 24.2856 psnr_L: 31.0409
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1170_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1170_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1170_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1180/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1180/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1180/500000] l_decoder: 0.0231 l_const_H: 0.0173 l_const_L: 0.0058
+[1180/500000] psnr_H: 23.8423 psnr_L: 29.2756
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1180_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1180_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1180_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[1190/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1190/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1190/500000] l_decoder: 0.0304 l_const_H: 0.0243 l_const_L: 0.0061
+[1190/500000] psnr_H: 22.5762 psnr_L: 29.1684
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1190_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1190_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1190_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1200/500000] l_discrimimator: 1.3464 l_df_real: 0.6732 l_df_fake: 0.6732
+[1200/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1200/500000] l_decoder: 0.0230 l_const_H: 0.0178 l_const_L: 0.0052
+[1200/500000] psnr_H: 23.6754 psnr_L: 29.5529
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1200_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1200_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1200_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1210/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1210/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1210/500000] l_decoder: 0.0229 l_const_H: 0.0177 l_const_L: 0.0052
+[1210/500000] psnr_H: 23.7627 psnr_L: 29.8161
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1210_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1210_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1210_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1220/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1220/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1220/500000] l_decoder: 0.0232 l_const_H: 0.0180 l_const_L: 0.0051
+[1220/500000] psnr_H: 23.7754 psnr_L: 29.8444
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1220_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1220_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1220_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1230/500000] l_discrimimator: 1.3464 l_df_real: 0.6731 l_df_fake: 0.6733
+[1230/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1230/500000] l_decoder: 0.0271 l_const_H: 0.0209 l_const_L: 0.0062
+[1230/500000] psnr_H: 23.0224 psnr_L: 29.3443
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1230_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1230_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1230_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1240/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1240/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[1240/500000] l_decoder: 0.0233 l_const_H: 0.0179 l_const_L: 0.0054
+[1240/500000] psnr_H: 23.6447 psnr_L: 29.3887
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1240_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1240_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1240_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1250/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1250/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[1250/500000] l_decoder: 0.0299 l_const_H: 0.0247 l_const_L: 0.0053
+[1250/500000] psnr_H: 22.3463 psnr_L: 29.7865
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1250_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1250_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1250_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1260/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1260/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1260/500000] l_decoder: 0.0222 l_const_H: 0.0183 l_const_L: 0.0038
+[1260/500000] psnr_H: 23.7351 psnr_L: 31.1467
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1260_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1260_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1260_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1270/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1270/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1270/500000] l_decoder: 0.0282 l_const_H: 0.0214 l_const_L: 0.0068
+[1270/500000] psnr_H: 23.0377 psnr_L: 28.4547
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1270_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1270_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1270_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1280/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[1280/500000] l_encoder: 1.3462 l_gan_g: 0.6732, l_gan_s: 0.6730
+[1280/500000] l_decoder: 0.0270 l_const_H: 0.0228 l_const_L: 0.0042
+[1280/500000] psnr_H: 22.6138 psnr_L: 30.7683
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1280_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1280_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1280_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1290/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[1290/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[1290/500000] l_decoder: 0.0247 l_const_H: 0.0195 l_const_L: 0.0052
+[1290/500000] psnr_H: 23.2714 psnr_L: 29.8371
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1290_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1290_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1290_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1300/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1300/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[1300/500000] l_decoder: 0.0227 l_const_H: 0.0174 l_const_L: 0.0052
+[1300/500000] psnr_H: 23.9767 psnr_L: 29.6778
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1300_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1300_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1300_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1310/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[1310/500000] l_encoder: 1.3462 l_gan_g: 0.6730, l_gan_s: 0.6731
+[1310/500000] l_decoder: 0.0298 l_const_H: 0.0243 l_const_L: 0.0056
+[1310/500000] psnr_H: 22.5520 psnr_L: 29.3104
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1310_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1310_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1310_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1320/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6730
+[1320/500000] l_encoder: 1.3468 l_gan_g: 0.6738, l_gan_s: 0.6730
+[1320/500000] l_decoder: 0.0869 l_const_H: 0.0590 l_const_L: 0.0280
+[1320/500000] psnr_H: 18.6529 psnr_L: 21.6943
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1320_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1320_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1320_x_L.png
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_05-04-02...
+[1330/500000] l_discrimimator: 1.3462 l_df_real: 0.6730 l_df_fake: 0.6731
+[1330/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[1330/500000] l_decoder: 0.0304 l_const_H: 0.0238 l_const_L: 0.0067
+[1330/500000] psnr_H: 22.4978 psnr_L: 28.5013
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1330_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1330_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/1330_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+Time is date
+Directory is /gdata/huangzp/hr_regan
+This job runs on following nodes:
+G115
+G115-gpu3
+G115-gpu2
+/gdata/huangzp/hr_regan/logs
+/gdata/huangzp/hr_regan/data
+/gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_08-04-59
+/gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10
+[*] MODEL dir: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_08-04-59
+[*] PARAM path: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_08-04-59/params.json
+[*] pic dir: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10
+[0/500000] l_discrimimator: 1.3894 l_df_real: 0.7028 l_df_fake: 0.6866
+[0/500000] l_encoder: 1.3863 l_gan_g: 0.6943, l_gan_s: 0.6920
+[0/500000] l_decoder: 0.3601 l_const_H: 0.1548 l_const_L: 0.2053
+[0/500000] psnr_H: 14.4091 psnr_L: 13.0600
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/0_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/0_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/0_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_08-04-59...
+[200/500000] l_discrimimator: 1.3466 l_df_real: 0.6733 l_df_fake: 0.6733
+[200/500000] l_encoder: 1.3466 l_gan_g: 0.6733, l_gan_s: 0.6734
+[200/500000] l_decoder: 0.0256 l_const_H: 0.0201 l_const_L: 0.0055
+[200/500000] psnr_H: 23.1663 psnr_L: 29.1802
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/200_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/200_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/200_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_08-04-59...
+[400/500000] l_discrimimator: 1.3462 l_df_real: 0.6730 l_df_fake: 0.6732
+[400/500000] l_encoder: 1.3462 l_gan_g: 0.6730, l_gan_s: 0.6731
+[400/500000] l_decoder: 0.0288 l_const_H: 0.0226 l_const_L: 0.0062
+[400/500000] psnr_H: 22.6164 psnr_L: 29.1177
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/400_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/400_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/400_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-04-30_08-04-59...
+[600/500000] l_discrimimator: 1.3465 l_df_real: 0.6730 l_df_fake: 0.6735
+[600/500000] l_encoder: 1.3476 l_gan_g: 0.6730, l_gan_s: 0.6746
+[600/500000] l_decoder: 0.0332 l_const_H: 0.0265 l_const_L: 0.0067
+[600/500000] psnr_H: 21.9532 psnr_L: 28.6002
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/600_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/600_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o10o10/600_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
