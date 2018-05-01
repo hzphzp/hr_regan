@@ -1,0 +1,191 @@
+Time is date
+Directory is /gdata/huangzp/hr_regan
+This job runs on following nodes:
+G115
+G115-gpu3
+G115-gpu2
+/gdata/huangzp/hr_regan/logs
+/gdata/huangzp/hr_regan/data
+/gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00
+/gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200
+[*] MODEL dir: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00
+[*] PARAM path: /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00/params.json
+[*] pic dir: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200
+[0/500000] l_discrimimator: 1.3892 l_df_real: 0.7025 l_df_fake: 0.6867
+[0/500000] l_encoder: 1.3647 l_gan_g: 0.6798, l_gan_s: 0.6850
+[0/500000] l_decoder: 0.0655 l_const_H: 0.0342 l_const_L: 0.0314
+[0/500000] psnr_H: 20.8878 psnr_L: 21.3689
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/0_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/0_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/0_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[15/500000] l_discrimimator: 1.3462 l_df_real: 0.6732 l_df_fake: 0.6731
+[15/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6730
+[15/500000] l_decoder: 0.0289 l_const_H: 0.0202 l_const_L: 0.0087
+[15/500000] psnr_H: 23.2173 psnr_L: 27.1105
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/15_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/15_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/15_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[30/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6731
+[30/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[30/500000] l_decoder: 0.0274 l_const_H: 0.0214 l_const_L: 0.0061
+[30/500000] psnr_H: 22.9032 psnr_L: 28.8404
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/30_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/30_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/30_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[45/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6731
+[45/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[45/500000] l_decoder: 0.0231 l_const_H: 0.0177 l_const_L: 0.0054
+[45/500000] psnr_H: 23.8789 psnr_L: 29.5532
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/45_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/45_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/45_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[60/500000] l_discrimimator: 1.3461 l_df_real: 0.6731 l_df_fake: 0.6731
+[60/500000] l_encoder: 1.3461 l_gan_g: 0.6731, l_gan_s: 0.6731
+[60/500000] l_decoder: 0.0271 l_const_H: 0.0222 l_const_L: 0.0049
+[60/500000] psnr_H: 22.7193 psnr_L: 29.9031
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/60_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/60_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/60_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[75/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[75/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[75/500000] l_decoder: 0.0186 l_const_H: 0.0151 l_const_L: 0.0035
+[75/500000] psnr_H: 24.3689 psnr_L: 31.5197
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/75_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/75_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/75_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[90/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[90/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6731
+[90/500000] l_decoder: 0.0328 l_const_H: 0.0274 l_const_L: 0.0054
+[90/500000] psnr_H: 21.8464 psnr_L: 29.7019
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/90_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/90_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/90_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[105/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[105/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[105/500000] l_decoder: 0.0238 l_const_H: 0.0180 l_const_L: 0.0058
+[105/500000] psnr_H: 23.7239 psnr_L: 29.9053
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/105_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/105_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/105_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[120/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[120/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[120/500000] l_decoder: 0.0280 l_const_H: 0.0236 l_const_L: 0.0044
+[120/500000] psnr_H: 22.6445 psnr_L: 30.7434
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/120_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/120_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/120_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[135/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[135/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[135/500000] l_decoder: 0.0242 l_const_H: 0.0184 l_const_L: 0.0058
+[135/500000] psnr_H: 23.7510 psnr_L: 29.1588
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/135_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/135_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/135_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[150/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[150/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[150/500000] l_decoder: 0.0228 l_const_H: 0.0183 l_const_L: 0.0045
+[150/500000] psnr_H: 23.5755 psnr_L: 30.4478
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/150_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/150_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/150_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[165/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[165/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[165/500000] l_decoder: 0.0214 l_const_H: 0.0173 l_const_L: 0.0041
+[165/500000] psnr_H: 23.8188 psnr_L: 30.9530
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/165_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/165_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/165_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[180/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[180/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[180/500000] l_decoder: 0.0238 l_const_H: 0.0182 l_const_L: 0.0056
+[180/500000] psnr_H: 23.8383 psnr_L: 29.5822
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/180_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/180_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/180_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[195/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[195/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[195/500000] l_decoder: 0.0210 l_const_H: 0.0167 l_const_L: 0.0044
+[195/500000] psnr_H: 23.9833 psnr_L: 30.6458
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/195_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/195_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/195_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[210/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[210/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[210/500000] l_decoder: 0.0244 l_const_H: 0.0200 l_const_L: 0.0044
+[210/500000] psnr_H: 23.3600 psnr_L: 30.6132
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/210_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/210_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/210_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[225/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[225/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[225/500000] l_decoder: 0.0280 l_const_H: 0.0225 l_const_L: 0.0056
+[225/500000] psnr_H: 22.7655 psnr_L: 29.6880
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/225_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/225_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/225_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[240/500000] l_discrimimator: 1.3461 l_df_real: 0.6730 l_df_fake: 0.6730
+[240/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[240/500000] l_decoder: 0.0218 l_const_H: 0.0179 l_const_L: 0.0039
+[240/500000] psnr_H: 23.7146 psnr_L: 31.1482
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/240_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/240_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/240_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[255/500000] l_discrimimator: 1.3460 l_df_real: 0.6730 l_df_fake: 0.6730
+[255/500000] l_encoder: 1.3460 l_gan_g: 0.6730, l_gan_s: 0.6730
+[255/500000] l_decoder: 0.0315 l_const_H: 0.0270 l_const_L: 0.0045
+[255/500000] psnr_H: 21.9111 psnr_L: 30.8381
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/255_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/255_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/255_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[!] Sampled dataset from A and B have different # of data. Try resampling...
+[*] Save models to /gdata/huangzp/hr_regan/logs/img_align_celeba_2018-05-01_00-30-00...
+[270/500000] l_discrimimator: 1.3462 l_df_real: 0.6731 l_df_fake: 0.6731
+[270/500000] l_encoder: 1.3461 l_gan_g: 0.6730, l_gan_s: 0.6730
+[270/500000] l_decoder: 0.0252 l_const_H: 0.0214 l_const_L: 0.0037
+[270/500000] psnr_H: 22.9874 psnr_L: 31.4982
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/270_x_H.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/270_x_S.png
+[*] Samples saved: /gdata/huangzp/hr_regan/result/hr_regan_newserver_o100o200/270_x_L.png
+[!] Sampled dataset from A and B have different # of data. Try resampling...
