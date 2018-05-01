@@ -273,12 +273,13 @@ class Trainer(object):
                 f_AB = self.E_AB(x_A)
                 f_AB_g = f_AB[:, 0:512, :, :]
                 f_AB_s = f_AB[:, 512:1024, :, :]
+                f_AB_g_data = Variable(f_AB_g, requires_grad=False)
 
-                f_AB_H = self.E_AB(x_A)
+                f_AB_H = self.E_AB(x_B)
                 f_AB_g_H = f_AB_H[:, 0:512, :, :]
                 f_AB_s_H = f_AB_H[:, 512:1024, :, :]
 
-                l_const_fg = d(f_AB_g, f_AB_g_H)
+                l_const_fg = d(f_AB_g_H, f_AB_g_data)
                 l_const_fs = d(f_AB_s_H, 0)
                 if self.loss == "log_prob":
                     l_gan_g = bce(self.D_F(f_AB_g), rlfk_tensor+0.1)
