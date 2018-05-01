@@ -245,7 +245,7 @@ class Trainer(object):
             optimizer_Discriminator.step()
 
             # update E_AB network
-            for e_step in range(100):
+            for e_step in range(2):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -273,14 +273,7 @@ class Trainer(object):
                 f_AB = self.E_AB(x_A)
                 f_AB_g = f_AB[:, 0:512, :, :]
                 f_AB_s = f_AB[:, 512:1024, :, :]
-                f_AB_g_data = Variable(f_AB_g, requires_grad=False)
 
-                f_AB_H = self.E_AB(x_B)
-                f_AB_g_H = f_AB_H[:, 0:512, :, :]
-                f_AB_s_H = f_AB_H[:, 512:1024, :, :]
-
-                l_const_fg = d(f_AB_g_H, f_AB_g_data)
-                l_const_fs = d(f_AB_s_H, 0)
                 if self.loss == "log_prob":
                     l_gan_g = bce(self.D_F(f_AB_g), rlfk_tensor+0.1)
                     l_gan_s = bce(self.D_F(f_AB_s), rlfk_tensor-0.1)
@@ -290,13 +283,53 @@ class Trainer(object):
                 else:
                     raise Exception("[!] Unkown loss type: {}".format(self.loss))
 
-                l_encoder = l_gan_s + l_gan_g + l_const_fg + l_const_fs
+                l_encoder = l_gan_s + l_gan_g
 
                 l_encoder.backward()
                 optimizer_Encoder.step()
+            # update E_AB network
+            for e_step in range(2):
+                try:
+                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
+                except StopIteration:
+                    A_loader, B_loader = iter(self.a_data_loader), iter(self.b_data_loader)
+                    x_A_1, x_B_1 = A_loader.next(), B_loader.next()
+                if x_A_1.size(0) != x_B_1.size(0):
+                    print("[!] Sampled dataset from A and B have different # of data. Try resampling...")
+                    continue
+
+                x_A_t2a=x_A_1.numpy()
+                x_A_t2a, x_B_t2a =img_random_dis(x_A_t2a)
+
+                x_A=torch.from_numpy(x_A_t2a)
+                x_B=torch.from_numpy(x_B_t2a)
+                x_A=x_A.float()
+                x_B=x_B.float()
+                x_A, x_B = self._get_variable(x_A), self._get_variable(x_B)
+
+                batch_size = x_A.size(0)
+                real_tensor.data.resize_(batch_size).fill_(real_label)
+                fake_tensor.data.resize_(batch_size).fill_(fake_label)
+
+                self.E_AB.zero_grad()
+
+                f_AB = self.E_AB(x_A)
+                f_AB_g = f_AB[:, 0:512, :, :]
+                f_AB_g_data = Variable(f_AB_g.data, requires_grad=False)
+
+                f_AB_H = self.E_AB(x_B)
+                f_AB_g_H = f_AB_H[:, 0:512, :, :]
+                f_AB_s_H = f_AB_H[:, 512:1024, :, :]
+
+                l_const_fg = d(f_AB_g_H, f_AB_g_data)
+                l_const_fs = torch.abs(f_AB_s_H).sum()
+                l_const = l_const_fg + l_const_fs
+
+                l_const.backward()
+                optimizer_Encoder.step()
 
             # update D_AB network
-            for d_step in range(200):
+            for d_step in range(2):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
