@@ -280,7 +280,7 @@ class Trainer(object):
                 f_AB_s_H = f_AB_H[:, 512:1024, :, :]
 
                 l_const_fg = d(f_AB_g_H, f_AB_g_data)
-                l_const_fs = torch.mean(torch.abs(f_AB_s_H)))
+                l_const_fs = torch.mean(torch.abs(f_AB_s_H))
                 if self.loss == "log_prob":
                     l_gan_g = bce(self.D_F(f_AB_g), rlfk_tensor+0.1)
                     l_gan_s = bce(self.D_F(f_AB_s), rlfk_tensor-0.1)
