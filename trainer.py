@@ -92,7 +92,7 @@ class Trainer(object):
             b_channel = 1 
             if self.cnn_type == 0:
                 #conv_dims, deconv_dims = [64, 128, 256, 512], [512, 256, 128, 64]
-                conv_dims, deconv_dims = [64, 128, 256, 1024], [256, 128, 64]
+                conv_dims, deconv_dims = [64, 128, 256, 512, 1024], [256, 128, 64]
             elif self.cnn_type == 1:
                 #conv_dims, deconv_dims = [32, 64, 128, 256], [256, 128, 64, 32]
                 conv_dims, deconv_dims = [32, 64, 128, 512], [128, 64, 32]
@@ -100,7 +100,7 @@ class Trainer(object):
                 raise Exception("[!] cnn_type {} is not defined".format(self.cnn_type))
 
             self.D_F = DiscriminatorCNN(
-                    int(conv_dims[-1]/2), 1, conv_dims, self.num_gpu)
+                    int(conv_dims[-1]/2), 1, deconv_dims, self.num_gpu)
             self.D_AB = DecoderCNN(
                     int(conv_dims[-1]/2), b_channel, deconv_dims, self.num_gpu)
             self.E_AB = EncoderCNN_1(
@@ -376,7 +376,7 @@ class Trainer(object):
                 print("[{}/{}] l_discrimimator: {:.4f} l_df_real: {:.4f} l_df_fake: {:.4f}". \
                       format(step, self.max_step, l_disciminator.data[0], l_df_B_real.data[0], l_df_B_fake.data[0]))
 
-                print("[{}/{}] l_encoder: {:.4f} l_gan_g: {:.4f}, l_gan_s: {:.4f}, l_const_fg: {:.4f}, l_const_fs: {:.4f}". \
+                print("[{}/{}] l_encoder: {:.4f} l_gan_g: {:.4f}, l_gan_s: {:.4f} l_const_fg: {:.4f} l_const_fs: {:.4f}". \
                       format(step, self.max_step, l_encoder.data[0], l_gan_g.data[0],
                              l_gan_s.data[0], l_const_fg.data[0], l_const_fs.data[0]))
 

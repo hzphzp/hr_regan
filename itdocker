@@ -1,0 +1,2 @@
+startdocker -P /gdata/huangzp/hr_regan/ -D /gdata/huangzp/hr_regan/ -u "-it --ipc=host" -c /bin/bash bit:5000/deepo
+cd /gdata/huangzp/hr_regan/

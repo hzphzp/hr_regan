@@ -1,6 +1,6 @@
-#PBS    -N 3_hr_regan_newserver
-#PBS    -o jobs/hr_regan_newserver_o100o200.out 
-#PBS    -e jobs/hr_regan_newserver_o100o200.err
+#PBS    -N 1_hr_regan_newserver
+#PBS    -o jobs/hr_regan_newserver_o100o50_withbinput.out 
+#PBS    -e jobs/hr_regan_newserver_o100o50_withbinput.err
 #PBS    -l nodes=1:gpus=2:D
 #PBS    -r y
 cd $PBS_O_WORKDIR
@@ -9,4 +9,4 @@ echo Directory is $PWD
 echo This job runs on following nodes:
 cat $PBS_NODEFILE
 cat $PBS_GPUFILE
-startdocker -P /gdata/huangzp/hr_regan/ -D /gdata/huangzp/hr_regan/ -u "--ipc=host" -c "python /gdata/huangzp/hr_regan/main.py --num_gpu=2 --save_step=15 --log_step=15 --log_dir=/gdata/huangzp/hr_regan/logs --data_dir=/gdata/huangzp/hr_regan/data --result_dir=/gdata/huangzp/hr_regan/result --experiment_name=hr_regan_newserver_o100o200"  bit:5000/deepo
+startdocker -P /gdata/huangzp/hr_regan/ -D /gdata/huangzp/hr_regan/ -u "--ipc=host" -c "python /gdata/huangzp/hr_regan/main.py --num_gpu=2 --save_step=30 --log_step=30 --log_dir=/gdata/huangzp/hr_regan/logs --data_dir=/gdata/huangzp/hr_regan/data --result_dir=/gdata/huangzp/hr_regan/result --experiment_name=hr_regan_newserver_o100o50_withbinput"  bit:5000/deepo
