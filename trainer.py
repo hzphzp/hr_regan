@@ -92,7 +92,7 @@ class Trainer(object):
             b_channel = 1 
             if self.cnn_type == 0:
                 #conv_dims, deconv_dims = [64, 128, 256, 512], [512, 256, 128, 64]
-                conv_dims, deconv_dims = [64, 128, 256, 512, 1024], [256, 128, 64]
+                conv_dims, deconv_dims = [64, 128, 256, 1024], [256, 128, 64]
             elif self.cnn_type == 1:
                 #conv_dims, deconv_dims = [32, 64, 128, 256], [256, 128, 64, 32]
                 conv_dims, deconv_dims = [32, 64, 128, 512], [128, 64, 32]
@@ -245,7 +245,7 @@ class Trainer(object):
             optimizer_Discriminator.step()
 
             # update E_AB network
-            for e_step in range(2):
+            for e_step in range(200):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -288,7 +288,7 @@ class Trainer(object):
                 l_encoder.backward()
                 optimizer_Encoder.step()
             # update E_AB network
-            for e_step in range(2):
+            for e_step in range(50):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -329,7 +329,7 @@ class Trainer(object):
                 optimizer_Encoder.step()
 
             # update D_AB network
-            for d_step in range(2):
+            for d_step in range(300):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
