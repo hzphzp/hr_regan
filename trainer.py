@@ -194,8 +194,8 @@ class Trainer(object):
         valid_x_B=valid_x_B.float()
         valid_x_A, valid_x_B = self._get_variable(valid_x_A), self._get_variable(valid_x_B)
 
-        vutils.save_image(valid_x_A.data, '{}/valid_x_A.png'.format(self.pic_dir))
-        vutils.save_image(valid_x_B.data, '{}/valid_x_B.png'.format(self.pic_dir))
+        vutils.save_image(valid_x_A.data*0.5+0.5, '{}/valid_x_A.png'.format(self.pic_dir))
+        vutils.save_image(valid_x_B.data*0.5+0.5, '{}/valid_x_B.png'.format(self.pic_dir))
 
         for step in range(self.start_step, self.max_step):
             try:
@@ -288,7 +288,7 @@ class Trainer(object):
                 l_encoder.backward()
                 optimizer_Encoder.step()
             # update E_AB network
-            for e_step in range(50):
+            for e_step in range(100):
                 try:
                     x_A_1, x_B_1 = A_loader.next(), B_loader.next()
                 except StopIteration:
@@ -322,7 +322,7 @@ class Trainer(object):
                 f_AB_s_H = f_AB_H[:, 512:1024, :, :]
 
                 l_const_fg = d(f_AB_g_H, f_AB_g_data)
-                l_const_fs = torch.abs(f_AB_s_H).sum()
+                l_const_fs = torch.mean(torch.abs(f_AB_s_H))
                 l_const = l_const_fg + l_const_fs
 
                 l_const.backward()
@@ -401,22 +401,30 @@ class Trainer(object):
         f_AB = self.E_AB(inputs)
         f_AB_g = f_AB[:, 0:512:, :, :]
         f_AB_s = f_AB[:, 512:1024, :, :]
+        f_zero = torch.zeros(f_AB_g.size())
+        f_zero = Variable(f_zero.cuda())
 
         x_H = self.D_AB(f_AB_g)
         x_S = self.D_AB(f_AB_s)
         x_L = self.D_AB(f_AB_g+f_AB_s)
+        x_zero = self.D_AB(f_zero)
         x_H_path = '{}/{}_x_H.png'.format(path, idx)
         x_S_path = '{}/{}_x_S.png'.format(path, idx)
         x_L_path = '{}/{}_x_L.png'.format(path, idx)
+        x_zero_path = '{}/{}_x_zero.png'.format(path, idx)
 
-        vutils.save_image(x_H.data, x_H_path)
+        vutils.save_image(x_H.data*0.5+0.5, x_H_path)
         print("[*] Samples saved: {}".format(x_H_path))
 
-        vutils.save_image(x_S.data, x_S_path)
+        vutils.save_image(x_S.data*0.5+0.5, x_S_path)
         print("[*] Samples saved: {}".format(x_S_path))
 
-        vutils.save_image(x_L.data, x_L_path)
+        vutils.save_image(x_L.data*0.5+0.5, x_L_path)
         print("[*] Samples saved: {}".format(x_L_path))
+
+        vutils.save_image(x_zero.data*0.5+0.5, x_zero_path)
+        print("[*] Samples saved: {}".format(x_zero_path))
+
 
     def generate_with_A_test(self, inputs, inputs2, path, idx=None):
         f_AB = self.E_AB(inputs)
